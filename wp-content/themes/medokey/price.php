@@ -188,7 +188,7 @@ get_header();
     <secton class="contacts">
         <div class="container">
             <div class="contacts__left">
-                <span class="contacts__title"></span>
+                <span class="contacts__title">Свяжитесь с нами</span>
                 <span class="contacts__address"></span>
                 <a class="contacts__phone" href="tel:+74994600781">+7 (499) 460-07-81</a>   
                 <div class="contacts__opening-hours">
