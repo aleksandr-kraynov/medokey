@@ -1,4 +1,3 @@
-
     <footer class="footer">
         <div class="container">
             <div class="footer-top">
@@ -120,11 +119,13 @@
         </div>
         </div>
     </footer>
-    <script>
-        new ItcAccordion(document.querySelector('.accordion'), {
-            alwaysOpen: true
-        });
-    </script>
+<script>
+    new ItcAccordion(document.querySelector('.accordion'), {
+        alwaysOpen: true
+    });
+</script>
+
+<? wp_footer(); ?>
 </body>
 
 </html>

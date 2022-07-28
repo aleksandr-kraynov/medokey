@@ -12,7 +12,8 @@ function medokey_scripts() {
     wp_register_script('jquery', 'https://code.jquery.com/jquery-3.6.0.min.js');
 
     wp_enqueue_script('jquery');
-    wp_enqueue_script('main', get_template_directory_uri() . '/assets/js/main.js', array('jquery'), 'null', true);
+    wp_enqueue_script('main', get_template_directory_uri() . '/assets/js/main.js', array('jquery'), 'null');
+    wp_enqueue_script('burger-menu', get_template_directory_uri() . '/assets/js/burger-menu.js', array('jquery'), 'null', true);
 };
 
 function true_include_myscript() {

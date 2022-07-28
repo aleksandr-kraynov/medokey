@@ -1,4 +1,4 @@
-/* Header */
+/* ---------- HEADER----------  */
 body {
     background: #f5f5f5;
 }
@@ -11,27 +11,9 @@ body {
     margin: 0 48px;
 }
 
-.header__nav {
-    background: #FFFFFF;
-    box-shadow: 0px 11px 19px rgba(0, 0, 0, 0.04);
-    border-radius: 6px;
+.header__nav {    
+    box-shadow: 0px 11px 19px rgba(0, 0, 0, 0.04);    
     height: 48px;
-}
-
-.header__nav-list {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-}
-
-.header__nav-item {
-    list-style: none;
-    width: 100%;
-    height: 100%;
-    text-align: center;
 }
 
 .header__bottom {
@@ -39,12 +21,18 @@ body {
     align-items: center;
     justify-content: space-between;
     margin: 24px auto;
+    gap: 15px;
+}
+
+.header__logo {
+    flex: none;
 }
 
 .header__phone {
     font-weight: 600;
     font-size: 26px;
-    line-height: 160%
+    line-height: 160%;
+    flex: none;
 }
 
 .header__button {
@@ -53,6 +41,11 @@ body {
     padding: 10px 32px;
     height: 40px;
     border-radius: 22px;
+    flex: none;
+}
+
+.header__button--mobile {
+    display: none;
 }
 
 .header__search {
@@ -63,6 +56,8 @@ body {
     background: #F5F5F5;
 }
 
+/* ---------- HEADER end ----------  */
+ 
 /* ---------- FOOTER ----------  */
 .footer {
     font-family: 'Gilroy';
@@ -386,3 +381,85 @@ body {
 }
 
 /* ---------- COMMENTS end ----------  */
+=======
+/* style for price by MK */
+
+.header-page {
+    max-width: 1920px;
+    min-height: 137px;
+    background-image: linear-gradient(90deg, rgb(11, 156, 239, .75) 6.67%, rgb(163, 212, 239, .75) 94.66%),  url('../images/banner-top-page.jpg');
+    padding-top: 24px;
+    padding-left: 164px;  
+    margin-bottom: 135px;  
+}
+
+.heading {
+    font-size: 44px;
+    font-weight: 900;
+    font-style: italic;
+    line-height: 52px;
+    color: #FFFFFF;
+}
+
+.price__container {
+    padding: 0 280px;  
+    margin-left: 0;  
+    margin-right: 0;
+}
+
+.price__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(348px, 312px ));
+    grid-column-gap: 60px;
+    grid-row-gap: 54px;
+    grid-auto-flow: dense;
+    list-style: none;
+}
+
+.card-certificate {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 48px 52px 74px;
+    max-width: 348px;
+    border-radius: 6px;  
+    background-color: #FFFFFF;  
+}
+
+.card-certificate__picture {
+    max-width: 242px;
+    max-height: 136px;
+    object-fit: cover;
+    margin-bottom: 30px;
+}
+
+.card__short-descriprion {
+    max-width: 296px;
+    max-height: 66px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 22px;
+    margin-bottom: 24px;
+}
+
+.card__price {
+    width: 165px;
+    border: 1.5px solid #0B9CEF;
+    text-align: center;
+    border-radius: 4px;
+    margin-bottom: 48px; 
+}
+
+.price-value {
+    font-size: 18px;
+    line-height: 30px;       
+}
+
+.card__button-buy {
+    display: block;
+    padding: 12px 60px;
+    border-radius: 25px;
+    background-color: #0B9CEF;    
+    color: #FFFFFF; 
+}
