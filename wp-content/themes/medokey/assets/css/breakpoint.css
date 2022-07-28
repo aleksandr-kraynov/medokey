@@ -1,5 +1,38 @@
-@media (min-width: 576px) { ... }
+@media (max-width: 576px) { ... }
 
-@media (min-width: 768px) { ... }
+@media (max-width: 768px) {
+    .container {    
+        margin: 0 24px;
+    }
 
-@media (min-width: 1200px) { ... }
+   .header__bottom {       
+        flex-wrap: wrap;
+        justify-content: space-around;
+   } 
+
+   .header__phone {
+        display: block!important;
+    }
+
+   .header__search {
+        width: 100%;
+   }
+}
+
+@media (max-width: 1200px) { 
+    .header__phone {
+        display: none;
+    }
+    .header__button {
+        display: none;
+    }
+    .header__button--mobile {
+        display: block;
+        flex: none;
+        width: 45px;
+        height: 45px;        
+        border-radius: 50%;
+        background-image: url(../images/phone.svg);
+        background-color: #FFFFFF;
+    }
+ }
