@@ -13,23 +13,20 @@
 	
 
 	<header class="header">
-		<div class="container">					
-			<?php wp_nav_menu( [
-				'theme_location'  => '',
-				'menu'            => 'navigation',
-				'container'       => 'nav',
-				'container_class' => 'header__nav',						
-				'menu_class'      => 'header__nav-list',																	
-				'items_wrap'      => '<ul class="%2$s">%3$s</ul>',						
-			] ); ?>
+		<div class="container">		
+			<div class="header__nav">
+				<?php wp_nav_menu( array( 'theme_location' => 'max_mega_menu_1' ) ); ?>
+			</div>			
 			<div class="header__bottom">
 				<div class="header__logo">
 					<img src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/logo.svg'">
 				</div>
-				<div class="header__phone">+7 (499) 460-07-81</div>
+				<div class="header__phone">
+					<a href="tel:+74994600781">+7 (499) 460-07-81</a>
+				</div>
 				<button class="header__button">Звонок по России бесплатный</button>
-				<input class="header__search" placeholder="Поиск"></input>
+				<button class="header__button--mobile"></button>
+				<input class="header__search" placeholder="Поиск"></input>				
 			</div>					
 		</div>		
 	</header>
-
