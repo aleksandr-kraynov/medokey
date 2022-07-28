@@ -6,6 +6,7 @@ function medokey_scripts() {
 
     wp_enqueue_style('normalize', get_template_directory_uri() . '/assets/css/normalize.css' );
     wp_enqueue_style('style', get_template_directory_uri() . '/assets/css/style.css' );
+    wp_enqueue_style('breakpoint', get_template_directory_uri() . '/assets/css/breakpoint.css' );
 
     wp_deregister_script('jquery');
     wp_register_script('jquery', 'https://code.jquery.com/jquery-3.6.0.min.js');
