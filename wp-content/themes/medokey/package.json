@@ -1,0 +1,16 @@
+{
+  "name": "underscores",
+  "version": "1.0.0",
+  "description": "",  
+  "main": "index.js",
+  "scripts": {    
+  },
+  "license": "GPL-2.0-or-later",    
+  "devDependencies": {
+    "@wordpress/scripts": "^19.2.2",
+    "dir-archiver": "^1.1.1",
+    "gulp": "^4.0.2",    
+    "node-sass": "^7.0.1",    
+    "browser-sync": "^2.27.10"    
+  }   
+}
