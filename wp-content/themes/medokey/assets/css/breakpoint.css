@@ -3,7 +3,7 @@
 
 @media (max-width: 768px) {
     .container {    
-        margin: 0 24px;
+        /* margin: 0 24px; */
     }
 
    .header__bottom {       
@@ -141,3 +141,55 @@
 }
 
 /* ---------- FOOTER end ----------  */
+
+ /* page price */
+
+ @media (max-width: 768px) {
+    .card-certificate {
+        max-width: 312px;
+        width: 100%;
+    }
+
+    .price__container {
+        padding: 0 30px;
+    }
+
+    .price__list {
+        column-gap: 50px;
+        row-gap: 30px; 
+    }
+ }
+
+
+ @media (max-width: 576px) {
+    .header-page-price {
+        margin-bottom: 28px;
+        padding-left: 25px;
+    }
+
+    .price__list {
+        grid-template-columns: 312px;
+        row-gap: 60px; 
+    }
+
+    .card-certificate__picture {
+        max-width: 216px;
+        max-height: auto;
+        margin-bottom: 27px;
+    }
+
+    .price__container {
+        max-width: 312px;
+        width: 100%;
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    .card-certificate {
+        padding: 24px 24px 30px;
+        max-width: 348px;
+        width: 100%;
+        border-radius: 6px;  
+        background-color: #FFFFFF;  
+    }
+ }

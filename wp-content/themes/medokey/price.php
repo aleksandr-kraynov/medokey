@@ -5,7 +5,7 @@ Template Name: Стоимость
 get_header();
 ?>
 
-    <div class="header-page">
+    <div class="header-page-price">
         <div class="breadcrumb"></div>
         <div class="page-heading">
             <h2 class="heading">Стоимость</h2>
