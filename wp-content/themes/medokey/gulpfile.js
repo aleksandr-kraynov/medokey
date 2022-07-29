@@ -1,6 +1,6 @@
 let gulp = require('gulp'),
     browserSync = require('browser-sync').create();
-    sass = require('gulp-sass')(require('sass'));
+   
 
 gulp.task('browser-sync', function() {
     browserSync.init({
