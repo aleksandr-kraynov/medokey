@@ -1,44 +1,48 @@
 /* ---------- HEADER----------  */
-@media (max-width: 576px) { ... }
-
-@media (max-width: 768px) {
-    .container {    
-        margin: 0 24px;
-    }
-
-   .header__bottom {       
-        flex-wrap: wrap;
-        justify-content: space-around;
-   } 
-
-   .header__phone {
-        display: block!important;
-    }
-
-   .header__search {
-        width: 100%;
-   }
+@media (max-width: 576px) {
+    ...
 }
 
-@media (max-width: 1200px) { 
+@media (max-width: 768px) {
+    .container {
+        /* margin: 0 24px; */
+    }
+
+    .header__bottom {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .header__phone {
+        display: block !important;
+    }
+
+    .header__search {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1200px) {
     .header__phone {
         display: none;
     }
+
     .header__button {
         display: none;
     }
+
     .header__button--mobile {
         display: block;
         flex: none;
         width: 45px;
-        height: 45px;        
+        height: 45px;
         border-radius: 50%;
         background-image: url(../images/phone.svg);
         background-color: #FFFFFF;
     }
- }
- 
- /* ---------- HEADER end ----------  */
+}
+
+/* ---------- HEADER end ----------  */
 
 /* ---------- FOOTER----------  */
 @media (max-width: 1200px) {
@@ -129,6 +133,7 @@
     }
 
     .line {
+        display: block;
         border-bottom: 1px solid #EBEBEB;
         width: 100%;
         /* линия */
@@ -140,4 +145,41 @@
 
 }
 
-/* ---------- FOOTER end ----------  */
+/* ---------- FOOTER end----------  */
+/* ---------- COMMENTS ----------*/
+@media (max-width: 768px) {
+    .comment {
+        flex-direction: column;
+    }
+
+    .comment .inner {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 576px) {
+    .wpcf7-form-control-wrap input[type="text"] {
+        width: 100%;
+    }
+
+    .wpcf7-form-control-wrap input[type="email"] {
+        width: 100%;
+    }
+}
+
+
+/* ---------- COMMENTS  end ----------  */
+
+/* ---------- GELOCATION ---------- */
+@media (max-width: 576px) {
+    .contact__items {
+        padding: 12px 24px 37px 20px;
+        margin: 0px 0px 24px 0px;
+    }
+
+    .contact__item {
+        padding: 12px 24px 37px 20px;
+    }
+}
+
+/* ---------- GELOCATION end ---------- */
