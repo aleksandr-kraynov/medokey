@@ -689,8 +689,9 @@ li::marker {
 
 /* style for price by MK */
 
-.header-page {
+.header-page-price {
     max-width: 1920px;
+    width: 100%;
     min-height: 137px;
     background-image: linear-gradient(90deg, rgb(11, 156, 239, .75) 6.67%, rgb(163, 212, 239, .75) 94.66%),  url('../images/banner-top-page.jpg');
     padding-top: 24px;
@@ -707,26 +708,29 @@ li::marker {
 }
 
 .price__container {
-    padding: 0 280px;  
-    margin-left: 0;  
-    margin-right: 0;
+    max-width: 1242px;
+    margin: 0 auto;
 }
 
 .price__list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(348px, 312px ));
-    grid-column-gap: 60px;
-    grid-row-gap: 54px;
-    grid-auto-flow: dense;
+    width: 100%;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(312px, 348px));
+    column-gap: 90px;
+    row-gap: 53px;
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .card-certificate {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 48px 52px 74px;
+    padding: 48px 26px 74px;
     max-width: 348px;
+    width: 100%;
     border-radius: 6px;  
     background-color: #FFFFFF;  
 }
@@ -749,7 +753,8 @@ li::marker {
 }
 
 .card__price {
-    width: 165px;
+    max-width: 165px;
+    width: 100%;
     border: 1.5px solid #0B9CEF;
     text-align: center;
     border-radius: 4px;
@@ -765,6 +770,15 @@ li::marker {
     display: block;
     padding: 12px 60px;
     border-radius: 25px;
+    border: 1px solid transparent;
     background-color: #0B9CEF;    
-    color: #FFFFFF; 
+    color: #FFFFFF;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.card__button-buy:hover {
+    color: #0B9CEF;
+    background-color: #FFFFFF;
+    border: 1px solid #0B9CEF;
 }

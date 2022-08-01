@@ -5,7 +5,7 @@ Template Name: Стоимость
 get_header();
 ?>
 
-<div class="header-page">
+    <div class="header-page-price">
         <div class="breadcrumb"></div>
         <div class="page-heading">
             <h2 class="heading">Стоимость</h2>
@@ -186,22 +186,7 @@ get_header();
         </div>        
     </section>
     <secton class="contacts">
-        <div class="container">
-            <div class="contacts__left">
-                <span class="contacts__title">Свяжитесь с нами</span>
-                <span class="contacts__address"></span>
-                <a class="contacts__phone" href="tel:+74994600781">+7 (499) 460-07-81</a>   
-                <div class="contacts__opening-hours">
-                    <ul class="hours__time-list">
-                        <li class="time-list__item"></li>
-                        <li class="time-list__item"></li>
-                        </ul> 
-                </div>
-            </div>
-            <div class="contacts__right">
-                <div class="contacts__map"></div>
-            </div>
-        </div>
+        
     </secton>
 
 
