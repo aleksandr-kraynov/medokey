@@ -5,100 +5,77 @@ Template Name: Доставка
 get_header()
 ?>
 
-<div class="wrapper">
-
-    <div class="header-page">
+<div class="header-page">
+    <div class="container container--heading">
         <div class="breadcrumb"></div>
         <div class="page-heading">
-            <h2 class="heading">Доставка</h2>
+            <h1 class="heading">Доставка</h1>
         </div>
     </div>
+</div>
 
-    <div class="container">
-
-        <div class="courier__container">
-            <!-- Курьерская служба -->
-            <div class="courier__content">
-                <div class="courier__picture">
-                    <img src="img/image 164.png" alt="" class="courier__image">
+<div class="container container--page">            
+    <div class="courier__content">
+        <div class="courier__picture">
+            <img class="courier__image" src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/courier.png'">
+        </div>
+        <div class="courier__description">
+            Курьерская служба нашей компании готова доставить ваш документ быстро и
+            абсолютно бесплатно по указанному при заказе адресу (в пределах МКАД).
+        </div>
+    </div>  
+    
+    <div class="courier-services">            
+        <div class="courier-services__item time">            
+            <div class="courier-services__body">
+                <div class="item-services__title left__title">
+                    Курьеры к вашим услугам в режиме:
                 </div>
-                <div class="courier__text">
-                    Курьерская служба нашей компании готова доставить ваш документ быстро и
-                    абсолютно бесплатно по указанному при заказе адресу (в пределах МКАД).
-                </div>
-            </div>
-
-        </div> <!-- Конец блока Курьерская служба -->
-    </div>
-
-
-    <div class="container">
-        <div class="courier-services__items">
-            <!-- Услуги -->
-            <div class="courier-services__item item-services left-services">  <!-- Услуги курьера -->
-                <img src="img/courier-time.svg" alt="Услуги курьера" class="item-services__icon">
-                <div class="item-services__body">
-                    <div class="item-services__title left__title">
-                        Курьеры к вашим услугам
-                        в режиме:
-                    </div>
-                    <div class="item-services__text">
-                        <p>ПН-ПТ с 7:00 до 22:00</p>
-                        <p>СБ-ВС с 9:00 до 21:00</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="courier-services__item item-services right__services"><!-- Заявка на справку -->                  
-                <img src="img/courier-call.svg" alt="Заявка" class="item-services__icon right_icon"> 
-                <div class="item-services__body">
-                    <div class="item-services__title right__title">
-                        Оставляйте заявку на сайте
-                        или позвоните нам +7 (499) 460-07-81
-                    </div>
-                    <div class="item-services__text left__text">
-                        <p>Готовую справку вы получите в
-                            течение суток</p>
-                    </div>
+                <div class="item-services__text">
+                    <p>ПН-ПТ с 7:00 до 22:00</p>
+                    <p>СБ-ВС с 9:00 до 21:00</p>
                 </div>
             </div>
         </div>
-    </div> <!-- Конец блока Услуги -->
-
-
-    <div class="container">
-        <div class="delivery__container">
-            <!-- Доставка -->
-            <div class="delivery-info">
-                <p>Экономьте время, выбирая удобную доставку.</p>
-                <p>Доставим больничные листы в города МО:</p>
+        <div class="courier-services__item call">           
+            <div class="courier-services__body">
+                <div class="item-services__title right__title">
+                    Оставляйте заявку на сайте или позвоните нам +7 (499) 460-07-81
+                </div>
+                <div class="item-services__text left__text">
+                    <p>Готовую справку вы получите в
+                        течение суток</p>
+                </div>
             </div>
-            <div class="delivery__menu">
-                <ul class="menu__list">
-                    <li class="list__item">
-                        <a href="#" class="item__link"><span>Мытищи</span></a>
-                    </li>
-                    <li class="list__item">
-                        <a href="#" class="item__link"><span>Химки</span></a>
-                    </li>
-                    <li class="list__item">
-                        <a href="#" class="item__link"><span>Балашиха</span></a>
-                    </li>
-                    <li class="list__item">
-                        <a href="#" class="item__link"><span>Королев</span></a>
-                    </li>
-                    <li class="list__item">
-                        <a href="#" class="item__link"><span>Красногорск</span></a>
-                    </li>
-                </ul>
-            </div>
-        </div> <!-- Конец блока Доставка -->
+        </div>
+
     </div>
 
+    <div class="delivery-location">
+        <p>Экономьте время, выбирая удобную доставку.</p>
+        <p>Доставим больничные листы в города МО:</p>
+        <ul class="delivery-location__list">
+            <li class="delivery-location__item">
+                <a class="delivery-location__link" href="#">Мытищи</a>
+            </li>
+            <li class="delivery-location__item">
+                <a class="delivery-location__link" href="#">Химки</a>
+            </li>
+            <li class="delivery-location__item">
+                <a class="delivery-location__link" href="#">Балашиха</a>
+            </li>
+            <li class="delivery-location__item">
+                <a class="delivery-location__link" href="#">Королев</a>
+            </li>
+            <li class="delivery-location__item">
+                <a class="delivery-location__link" href="#">Красногорск</a>
+            </li>
+        </ul>
+    </div>    
+</div>
 
-    <div class="container__gelocation">
-        <div class="gelocation">
-            <!--  Геолокация -->
+    <!-- <div class="container__gelocation">
+        <div class="gelocation">            
             <div class="contact__items">
                 <div class="contact__item">
                     <div class="contact__title">
@@ -117,7 +94,6 @@ get_header()
                     </div>
                 </div>
             </div>
-
             <div class="gelocation__items">
                 <div class="gelocation__item">
                     <div style="position:relative;overflow:hidden;"><a
@@ -130,8 +106,8 @@ get_header()
                             style="position:relative;"></iframe></div>
                 </div>
             </div>
-        </div> <!-- Конец блока Геолокация -->
-    </div>
+        </div>
+    </div> -->
 
 </div>
 

@@ -4,16 +4,19 @@ Template Name: Отзывы
 */
 get_header()
 ?>
-<div class="header-page">
+
+<div div class="header-page">
+    <div class="container-heading">
         <div class="breadcrumb"></div>
         <div class="page-heading">
-            <h2 class="heading">Отзовы</h2>
+            <h1 class="heading">Стоимость</h1>
         </div>
+    </div>
 </div>
+
 <div class="comments">
     <div class="comment">
-        <div class="inner">
-            
+        <div class="inner">            
             <div class="wrap">
                 <div class="comment__avatar">
                 <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/avatar-gerl.png'">
