@@ -1031,6 +1031,170 @@ li::marker {
     border: none;
 }
 
+.wrapper {
+    height: 100%;
+    background: #F5F5F5;
+}
+.order__container {
+    max-width: 1244px;
+    margin: 0 auto;
+}
+.order__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 23.84px;
+    line-height: 160%;
+    text-align: center;
+    color: #222129;
+
+    margin: 0px 0px 81px 0px;
+}
+.contact__specialist {
+    margin: 81px 0px 94px 15px;
+}
+
+.order__payment-choice {
+    display: flex;
+    flex-wrap: wrap;
+}
+.choice-payment__element {
+    flex: 1 1 348px;
+    text-align: center;
+    padding: 0 15px;
+
+    margin: 0px 0px 8px 0px;
+}
+.choice-content {
+    background: #FFFFFF;
+    border-radius: 6px;
+    height: 400px;
+    padding: 66px;
+    
+}
+.choice-payment__picture {
+    display: flex;
+    height: 143px;
+    justify-content: center;
+   
+}
+
+.choice-payment__description {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 160%;
+    text-align: center;
+    color: #222129;
+
+    margin-top: 75px;
+}
+
+
+.choice-payment__mastercard {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+/* Геолокация  ======== */
+.container__gelocation {
+    max-width: 1592px;
+    margin: 0 auto;
+}
+
+.gelocation {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 10px;
+    justify-content: center;
+}
+
+.contact__items {
+    margin: 0px 24px 24px 0px;
+}
+
+.contact__item {
+    background: #FFFFFF;
+    box-shadow: 0px 11.5279px 23.0558px rgba(0, 0, 0, 0.06);
+    border-radius: 6.91673px;
+    text-align: left;
+    padding: 53px 85px 167px 102px;
+}
+
+.contact__title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 27.6669px;
+    line-height: 170%;
+    color: #222129;
+    text-align: center;
+    margin: 0px 0px 84px 0px;
+}
+
+.contact__address {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20.7502px;
+    line-height: 160%;
+    color: #222129;
+
+    max-width: 336px;
+    margin: 0px 0px 33px 0px;
+    position: relative;
+    padding-left: 28px;
+}
+
+.contact__address::before {
+    content: '';
+    background: url('../images/gelocation.svg') no-repeat;
+    width: 22px;
+    height: 25px;
+    position: absolute;
+    top: 6px;
+    left: -5px;
+}
+
+.contact__iphone {
+    margin: 0px 0px 54px 0px;
+    padding-left: 28px;
+    position: relative;
+}
+
+.contact__iphone::before {
+    content: '';
+    background: url('../images/gelocation-call.svg') no-repeat;
+    width: 22px;
+    height: 25px;
+    position: absolute;
+    top: 6px;
+    left: -5px;
+}
+
+.iphone-contact {
+    color: #222129;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 20.7502px;
+    line-height: 160%;
+}
+
+.contact__work {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18.4446px;
+    line-height: 160%;
+    color: #222129;
+}
+
+.gelocation__items {
+    flex: 1 1 50%;
+}
+
+
+/* Конец Блок Оплата ==============
+===================== */
+
+
 /* ---------- GELOCATION end ---------- */
 
 /* ---------- COMMENTS end ---------- */
