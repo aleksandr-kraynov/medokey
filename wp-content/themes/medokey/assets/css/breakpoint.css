@@ -21,6 +21,11 @@
     .header__search {
         width: 100%;
     }
+    
+    .left__contacts {
+        margin-right: 0px;
+        text-align: center;
+    }
 }
 
 @media (max-width: 1200px) {
