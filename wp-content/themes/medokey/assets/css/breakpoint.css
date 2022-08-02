@@ -18,6 +18,11 @@
     .header__search {
         width: 100%;
     }
+    
+    .left__contacts {
+        margin-right: 0px;
+        text-align: center;
+    }
 }
 
 @media (max-width: 1200px) {
@@ -232,6 +237,16 @@
         min-height: 55px;
     }
 
+ }
+ @media (max-width: 1440px) {
+    .direction__head {
+        flex-direction: column;
+        margin: 0px 0px 20px 0px;
+    }
+ } 
+
+
 }
 
 /* ---------- ORDERING end ---------- */
+
