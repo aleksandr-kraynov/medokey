@@ -37,8 +37,8 @@
         width: 45px;
         height: 45px;
         border-radius: 50%;
-        background-image: url(../images/phone.svg);
-        background-color: #FFFFFF;
+        background: #0B9CEF url(../images/phone.svg) no-repeat center;
+      
     }
 }
 
@@ -142,7 +142,6 @@
 
 }
 
-
 /* ---------- FOOTER end----------  */
 
 /* ---------- COMMENTS ----------*/
@@ -166,19 +165,22 @@
     }
 }
 
-
 /* ---------- COMMENTS  end ----------  */
 
 /* ---------- GELOCATION ---------- */
-@media (max-width: 576px) {
-    .contact__items {
-        padding: 12px 24px 37px 20px;
-        margin: 0px 0px 24px 0px;
+@media (max-width: 768px) {
+    .courier__content {
+        flex-direction: column;
+        padding: 16px 32px;
     }
 
-    .contact__item {
-        padding: 12px 24px 37px 20px;
+    .courier__picture {
+        margin: 0 0 16px;
     }
+
+    .contacts {
+        padding: 16px 32px;        
+    }    
 }
 
 /* ---------- GELOCATION end ---------- */

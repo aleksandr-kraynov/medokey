@@ -20,7 +20,8 @@ body {
     height: 136px;
     background: linear-gradient(90deg, rgb(11, 156, 239, .75) 6.67%, rgb(163, 212, 239, .75) 94.66%), url('../images/banner-top.png') no-repeat center;
     padding-top: 24px;
-    margin-bottom: 80px;
+    margin: 0 auto 80px;
+    max-width: 1824px;
 }
 
 .header-page--price {    
@@ -72,20 +73,6 @@ body {
     border: 0;
     border-radius: 6px;
     background: #F5F5F5;
-}
-
-.wrapper {
-    background: #F5F5F5;
-    height: 100%;
-}
-
-.heading {
-    font-family: 'Gilroy';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 21px;
-    color: #FFFFFF;
 }
 
 /* ---------- HEADER END----------  */
@@ -163,21 +150,33 @@ body {
     color: #FFFFFF;
 }
 
+.card__button:hover {
+    color: #0B9CEF;
+    background-color: #FFFFFF;
+    border: 1px solid #0B9CEF;
+    cursor: pointer;
+}
+
 /* ---------- PRICE END----------  */
 
 /* ---------- DELIVERY----------  */
 .courier__content {
-    background: #fff;
-    border-radius: 8px;
     display: flex;
     align-items: center;
-    padding: 0px 64px;
-    margin-bottom: 64px;
     border: 1px solid #EBEBEB; 
+    background: #fff;
+    border-radius: 8px;    
+    padding: 0px 64px;
+    margin-bottom: 64px;    
 }
 
 .courier__picture {   
-    margin-right: 48px;
+    margin-right: 48px;    
+}
+
+.courier__image {
+    max-width: none;
+    vertical-align: top;
 }
 
 .courier__description {
@@ -197,6 +196,7 @@ body {
 
 .courier-services__item {  
     display: flex;    
+    flex: 1 1 47%;
     width: 568px;
     background: #FFFFFF;
     border: 1px solid #EBEBEB;
@@ -226,8 +226,6 @@ body {
    
 }
 
-.item-services__body {}
-
 .item-services__title {
     font-style: normal;
     font-weight: 500;
@@ -250,6 +248,7 @@ body {
     font-size: 18px;
     line-height: 30px;
     color: #222129;
+    margin-bottom: 52px;
 }
 
 .delivery-location__list {
@@ -267,128 +266,92 @@ body {
 
 /* ---------- DELIVERY END----------  */
 
-/* Геолокация  ======== */
-.container__gelocation {
-    max-width: 1592px;
-    margin: 0 auto;
-}
+/* ---------- GEOLOCATION----------  */
 
-.gelocation {
+.geolocation {
     display: flex;
-    flex-wrap: wrap;
-    margin: 0 10px;
-    justify-content: center;
+    flex-wrap: wrap; 
+    justify-content: center;    
+    margin-bottom: 80px;
+    gap: 24px;
 }
 
-.contact__items {
-    margin: 0px 24px 24px 0px;
-}
-
-.contact__item {
+.contacts {
     background: #FFFFFF;
-    box-shadow: 0px 11.5279px 23.0558px rgba(0, 0, 0, 0.06);
-    border-radius: 6.91673px;
-    text-align: left;
-    padding: 53px 85px 184px 102px;
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;    
+    padding: 56px 96px;   
+    flex: 1 1 48%;
 }
 
-.contact__title {
+.contacts__title {
     font-style: normal;
     font-weight: 500;
-    font-size: 27.6669px;
-    line-height: 170%;
+    font-size: 28px;
+    line-height: 48px;
     color: #222129;
     text-align: center;
-    margin: 0px 0px 84px 0px;
+    margin-bottom: 84px;
 }
 
-.contact__address {
+.contacts__address {
     font-style: normal;
     font-weight: 500;
-    font-size: 20.7502px;
+    font-size: 20px;
     line-height: 30px;
-    color: #222129;
-
-    max-width: 304px;
-    margin: 0px 0px 33px 0px;
-    position: relative;
-    padding-left: 28px;
+    color: #222129;    
+    margin-bottom: 33px;
 }
 
-.contact__address::before {
-    content: '';
-    background: url('./img/gelocation.svg') no-repeat;
-    width: 22px;
-    height: 25px;
-    position: absolute;
-    top: 6px;
-    left: -5px;
-}
-
-.contact__iphone {
-    margin: 0px 0px 54px 0px;
-    padding-left: 28px;
-    position: relative;
-}
-
-.contact__iphone::before {
-    content: '';
-    background: url('./img/gelocation-call.svg') no-repeat;
-    width: 22px;
-    height: 25px;
-    position: absolute;
-    top: 6px;
-    left: -5px;
-}
-
-.iphone-contact {
+.contacts__data {
+    display: flex;
+    align-items: center;
     color: #222129;
     text-decoration: none;
     font-weight: 500;
-    font-size: 20.7502px;
+    font-size: 20px;
     line-height: 30px;
 }
 
-.contact__work {
+.contacts__data::before {
+    content: '';
+    display: block;
+    flex: none;
+    width: 22px;
+    height: 22px; 
+    border-radius: 50%;     
+    margin-right: 16px; 
+}
+
+.location {
+    margin-bottom: 32px;
+}
+
+.location::before {
+    background: #0B9CEF url(../images/location.svg) no-repeat center;  
+}
+
+.phone {
+    margin-bottom: 56px;
+}
+
+.phone::before {
+    background: #0B9CEF url(../images/phone.svg) no-repeat center;  
+}
+
+.contacts__work {
     font-style: normal;
     font-weight: 400;
-    font-size: 18.4446px;
+    font-size: 18px;
     line-height: 30px;
     color: #222129;
 }
 
-.gelocation__items {
+.geolocation__map {
     flex: 1 1 50%;
 }
 
-.gelocation__item {}
-
-/* Геолокация  ======== */
-
-
-
-@media (max-width: 576px) {
-    .contact__item {
-        padding: 12px 24px 37px 20px;
-    }
-}
-
-@media (max-width: 768px) {
-    .courier__content {
-        justify-content: center;
-        flex-wrap: wrap;
-        padding: 0px 10px 0px 10px;
-        margin-right: 0;
-    }
-
-    .contact__items {
-        margin: 0px 0px 24px 0px;
-    }
-}
-
-@media (min-width: 1200px) {}
-
-/* ---------- HEADER end ----------  */
+/* ---------- GEOLOCATION END----------  */
 
 /* ---------- FOOTER ----------  */
 .footer {
@@ -541,13 +504,13 @@ body {
     color: #000000;
 }
 
-.location {
+/* .location {
     position: relative;
     padding-left: 35px;
     width: 246px;
-}
+} */
 
-.location::before {
+/* .location::before {
     content: '';
     top: 3px;
     left: 0px;
@@ -555,9 +518,9 @@ body {
     height: 20px;
     position: absolute;
     background-image: url(../images/map.svg);
-}
+} */
 
-.location a {
+/* .location a {
     color: #0B9CEF;
     background-color: #ffffff;
     position: relative;
@@ -569,7 +532,7 @@ body {
 .location a:hover {
     background-color: #ffffff;
 
-}
+} */
 
 .contact__inner {
     padding: 15px;
@@ -852,21 +815,10 @@ body {
 
 /* ---------- CF7 end ---------- */
 
-/* ---------- GELOCATION ---------- */
+/* ---------- GELOCATION ----------
 .comments-gelocation {
     max-width: 1592px;
     margin: 100px auto;
-}
-
-.gelocation {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 10px;
-    justify-content: center;
-}
-
-.contact__items {
-    margin: 0px 24px 24px 0px;
 }
 
 .contact__item {
@@ -948,21 +900,9 @@ body {
 
 .gelocation__item iframe {
     border: none;
-}
+} */
 
 /* ---------- GELOCATION end ---------- */
 
 /* ---------- COMMENTS end ---------- */
-=======
-    border: 1px solid transparent;
-    background-color: #0B9CEF;    
-    color: #FFFFFF;
-    transition-duration: .3s;
-    transition-timing-function: ease;
-}
 
-.card__button-buy:hover {
-    color: #0B9CEF;
-    background-color: #FFFFFF;
-    border: 1px solid #0B9CEF;
-}
