@@ -24,7 +24,7 @@
     
     .left__contacts {
         margin-right: 0px;
-        text-align: center;
+        padding: 0 15px;
     }
 }
 
