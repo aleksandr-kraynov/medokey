@@ -1,13 +1,11 @@
 /* ---------- HEADER----------  */
-@media (max-width: 576px) {
-    
-}
+@media (max-width: 576px) {}
 
 @media (max-width: 768px) {
     .container {
         padding: 0 24px;
     }
-    
+
     .header__bottom {
         flex-wrap: wrap;
         justify-content: space-around;
@@ -38,7 +36,7 @@
         height: 45px;
         border-radius: 50%;
         background: #0B9CEF url(../images/phone.svg) no-repeat center;
-      
+
     }
 }
 
@@ -82,7 +80,7 @@
 
 }
 
-@media (max-width: 576px) {  
+@media (max-width: 576px) {
 
     .footer__logo {
         margin: 0 0 10px 15px;
@@ -179,8 +177,61 @@
     }
 
     .contacts {
-        padding: 16px 32px;        
-    }    
+        padding: 16px 32px;
+    }
 }
 
 /* ---------- GELOCATION end ---------- */
+
+/* ---------- ARCHIVE ---------- */
+@media (max-width: 768px) {
+    .article {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .article .inner {
+        flex-direction: column;
+    }
+}
+
+/* ---------- ARCHIVE end ---------- */
+
+
+/* ---------- ORDERING ---------- */
+@media (max-width: 1024px) {
+    .ordering__info {
+        justify-items: center;
+    }
+
+    .info__item {
+        max-width: 485px;
+    }
+
+}
+
+@media (max-width: 576px) {
+
+
+    .ordering__info {
+        grid-template-columns: 1fr;
+    }
+
+    .info__item {
+        padding: 15px 15px;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .info__item .wrap {
+        margin: 5px 0 0 0;
+    }
+
+    .info__pic {
+        min-width: 55px;
+        min-height: 55px;
+    }
+
+}
+
+/* ---------- ORDERING end ---------- */
