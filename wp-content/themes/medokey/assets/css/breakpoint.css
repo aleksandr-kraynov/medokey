@@ -245,3 +245,9 @@
         background-color: #FFFFFF;  
     }
  }
+ @media (max-width: 1440px) {
+    .direction__head {
+        flex-direction: column;
+        margin: 0px 0px 20px 0px;
+    }
+ } 

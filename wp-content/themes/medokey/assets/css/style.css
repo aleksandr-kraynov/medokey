@@ -1295,6 +1295,80 @@ li::marker {
 /* Конец Блока Контакты ==============
 ===================== */
 
+/* Блока Статья ==============
+===================== */
+.direction__container {
+    max-width: 1590px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.direction__head {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    flex-wrap: wrap;
+}
+.direction__title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 120%;
+    color: #222129;
+}
+.direction__date {
+   display: flex;
+   align-items:center;
+}
+.date__month {
+    position: relative;
+}
+.date__month::before {
+    content: '';
+    width: 18px;
+    height: 18px;
+    background: url('../images/page-time.svg') no-repeat;
+    position: absolute;
+    top: 4px;
+    left: -30px;
+}
+.date__quantity {
+    margin: 0px 0px 0px 61px;
+    position: relative;
+}
+.date__quantity::before {
+    content: '';
+    width: 18px;
+    height: 18px;
+    background: url('../images/page-quantity.svg') no-repeat;
+    position: absolute;
+    top: 4px;
+    left: -30px;
+}
+.body__title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 120%;
+    color: #222129;
+}
+.body__text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 160%;
+    color: #222129;
+}
+.body__menu {
+    margin: 0;
+}
+.body__list::marker {
+    color: #000;
+}
+.body__link {
+    color:#0B9CEF;
+}
+/* Конец Блока Статья ==============
+===================== */
 
 
 
