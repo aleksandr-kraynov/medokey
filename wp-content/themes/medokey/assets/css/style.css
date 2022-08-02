@@ -1,15 +1,34 @@
-/* ---------- HEADER----------  */
 body {
-    background: #f5f5f5;
-}
-
-.header {
-    height: 192px;
+    background: #FBFBFB;    
 }
 
 .container {
-    margin: 0 48px;
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 0 48px;
 }
+
+.container--heading {
+    max-width: 1592px;    
+}
+
+.container--page {
+    max-width: 1292px;    
+}
+
+.header-page {
+    height: 136px;
+    background: linear-gradient(90deg, rgb(11, 156, 239, .75) 6.67%, rgb(163, 212, 239, .75) 94.66%), url('../images/banner-top.png') no-repeat center;
+    padding-top: 24px;
+    margin: 0 auto 80px;
+    max-width: 1824px;
+}
+
+.header-page--price {    
+    background: linear-gradient(90deg, rgb(11, 156, 239, .75) 6.67%, rgb(163, 212, 239, .75) 94.66%), url('../images/banner-top-page.jpg') no-repeat center; 
+}
+
+/* ---------- HEADER----------  */
 
 .header__nav {
     box-shadow: 0px 11px 19px rgba(0, 0, 0, 0.04);
@@ -31,7 +50,7 @@ body {
 .header__phone {
     font-weight: 600;
     font-size: 26px;
-    line-height: 160%;
+    line-height: 30px;
     flex: none;
 }
 
@@ -56,130 +75,162 @@ body {
     background: #F5F5F5;
 }
 
-.wrapper {
-    background: #F5F5F5;
-    height: 100%;
-}
+/* ---------- HEADER END----------  */
 
-.header-page {
-    width: 1920px;
-    min-height: 137px;
-    background-image: linear-gradient(90deg, rgb(11, 156, 239, .75) 6.67%, rgb(163, 212, 239, .75) 94.66%), url('./img/banner-top-page.jpg');
-    padding-top: 24px;
-    padding-left: 164px;
-    margin-bottom: 89px;
-}
+/* ---------- PRICE----------  */
 
 .heading {
-    font-family: 'Gilroy';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 21px;
-
+    font-size: 44px;
+    font-weight: 900;
+    font-style: italic;
+    line-height: 52px;
     color: #FFFFFF;
 }
 
-.container {
-    max-width: 1194px;
-    margin: 0 auto;
-    padding: 0px 15px;
+.price__list {   
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;  
+    gap: 48px; 
 }
 
-/* Курьерская служба ======== */
-.courier__container {
-    margin: 0px 0px 66px 0px;
+.list__item {
+    max-width: 348px;
 }
 
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 48px 54px 72px;
+    width: 100%;   
+    border: 1px solid #EBEBEB; 
+    border-radius: 6px;  
+    background-color: #FFFFFF;  
+}
+
+.card__picture {    
+    max-height: 136px;
+    object-fit: cover;
+    margin-bottom: 30px;
+}
+
+.card__descriprion {
+    max-width: 296px;
+    max-height: 66px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 22px;
+    margin-bottom: 24px;
+}
+
+.card__price {
+    max-width: 165px;
+    width: 100%;
+    border: 1px solid #0B9CEF;
+    text-align: center;
+    border-radius: 4px;
+    margin-bottom: 48px;
+}
+
+.price-value {
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.card__button {
+    display: block;
+    padding: 16px 64px;
+    border-radius: 25px;
+    background-color: #0B9CEF;
+    color: #FFFFFF;
+}
+
+.card__button:hover {
+    color: #0B9CEF;
+    background-color: #FFFFFF;
+    border: 1px solid #0B9CEF;
+    cursor: pointer;
+}
+
+/* ---------- PRICE END----------  */
+
+/* ---------- DELIVERY----------  */
 .courier__content {
-    background: #fff;
-    border-radius: 8.93846px;
     display: flex;
     align-items: center;
-    padding: 0px 67px 0px 64px;
+    border: 1px solid #EBEBEB; 
+    background: #fff;
+    border-radius: 8px;    
+    padding: 0px 64px;
+    margin-bottom: 64px;    
 }
 
-.courier__picture {
-    margin-right: 46px;
+.courier__picture {   
+    margin-right: 48px;    
 }
 
-.courier__image {}
+.courier__image {
+    max-width: none;
+    vertical-align: top;
+}
 
-.courier__text {
+.courier__description {
     font-style: normal;
     font-weight: 600;
-    font-size: 18.84px;
-    line-height: 160%;
+    font-size: 18px;
+    line-height: 30px;
     color: #222129;
 }
 
-/* Курьерская служба ======== */
-
-
-/* Курьерские услуги ======== */
-.courier-services__items {
+.courier-services {
     display: flex;
-    flex-wrap: wrap;
-    gap: 63px;
-
-    margin: 0px 0px 63px 0px;
+    justify-content: center;
+    gap: 56px;
+    flex-wrap: wrap;         
 }
 
-.courier-services__item {
+.courier-services__item {  
+    display: flex;    
     flex: 1 1 47%;
-}
-
-.item-services {
-    display: flex;
+    width: 568px;
     background: #FFFFFF;
-    border-radius: 8.93846px;
-    padding: 26px 0px 43px 0px;
+    border: 1px solid #EBEBEB;
+    border-radius: 8px;
+    padding: 24px;
 }
 
-.right__title {
-    max-width: 400px;
+.courier-services__item::before {
+    content: '';
+    display: block;
+    flex: none;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;        
+    margin-right: 24px;
 }
 
-.left__title {
-    max-width: 280px;
+.call::before {
+    background: #0B9CEF url(../images/call.svg) no-repeat center;
 }
 
-.left__text {
-    max-width: 282px;
+.time::before {
+    background: #0B9CEF url(../images/time.svg) no-repeat center;
 }
 
-.item-services__icon {
-    flex: 0 0 60px;
-    height: 102px;
-    align-self: flex-start;
-    position: relative;
+.courier-services__body {
+   
 }
-
-.right_icon {
-    width: 55px;
-    height: 55px;
-    margin: 0px 20px;
-}
-
-.call {
-    background: rgb(194, 19, 19);
-    border-radius: 50px;
-    flex: 0 0 60px;
-    height: 102px;
-    align-self: flex-start;
-}
-
-.services__call {
-    background: #000;
-}
-
-.item-services__body {}
 
 .item-services__title {
     font-style: normal;
     font-weight: 500;
     font-size: 22.84px;
-    line-height: 160%;
+    line-height: 30px;
     color: #222129;
     margin: 0px 0px 22px 0px;
 }
@@ -188,179 +239,119 @@ body {
     font-style: normal;
     font-weight: 500;
     font-size: 18.84px;
-    line-height: 160%;
+    line-height: 30px;
     color: #222129;
 }
 
-.item-services__text,
-p {
-    margin-bottom: 20px;
-}
-
-/* Курьерские услуги ======== */
-
-
-/* Доставка  ======== */
-.delivery__container {
-    margin: 0px 0px 52px 0px;
-}
-
-.delivery-info {
+.delivery-location {
     font-weight: 600;
-    font-size: 18.84px;
-    line-height: 160%;
-
+    font-size: 18px;
+    line-height: 30px;
     color: #222129;
+    margin-bottom: 52px;
 }
 
-.delivery__menu {}
-
-.menu__list {
-    padding-left: 25px;
+.delivery-location__list {
+   margin: 0;   
 }
 
-.list__item {}
+.delivery-location__item {
+    color: #0B9CEF;
+    margin-bottom: 8px;
+}
 
-.item__link {
-    font-weight: 600;
-    font-size: 18.84px;
-    line-height: 160%;
-    text-decoration: none;
+.delivery-location__link {
     color: #0B9CEF;
 }
 
-.item__link,
-li::marker {
-    color: #0B9CEF;
-}
+/* ---------- DELIVERY END----------  */
 
-/* Доставка  ======== */
+/* ---------- GEOLOCATION----------  */
 
-
-/* Геолокация  ======== */
-.container__gelocation {
-    max-width: 1592px;
-    margin: 0 auto;
-}
-
-.container__gelocation {}
-
-.gelocation {
+.geolocation {
     display: flex;
-    flex-wrap: wrap;
-    margin: 0 10px;
-    justify-content: center;
+    flex-wrap: wrap; 
+    justify-content: center;    
+    margin-bottom: 80px;
+    gap: 24px;
 }
 
-.contact__items {
-    margin: 0px 24px 24px 0px;
-}
-
-.contact__item {
+.contacts {
     background: #FFFFFF;
-    box-shadow: 0px 11.5279px 23.0558px rgba(0, 0, 0, 0.06);
-    border-radius: 6.91673px;
-    text-align: left;
-    padding: 53px 85px 184px 102px;
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;    
+    padding: 56px 96px;   
+    flex: 1 1 48%;
 }
 
-.contact__title {
+.contacts__title {
     font-style: normal;
     font-weight: 500;
-    font-size: 27.6669px;
-    line-height: 170%;
+    font-size: 28px;
+    line-height: 48px;
     color: #222129;
     text-align: center;
-    margin: 0px 0px 84px 0px;
+    margin-bottom: 84px;
 }
 
-.contact__address {
+.contacts__address {
     font-style: normal;
     font-weight: 500;
-    font-size: 20.7502px;
-    line-height: 160%;
-    color: #222129;
-
-    max-width: 304px;
-    margin: 0px 0px 33px 0px;
-    position: relative;
-    padding-left: 28px;
+    font-size: 20px;
+    line-height: 30px;
+    color: #222129;    
+    margin-bottom: 33px;
 }
 
-.contact__address::before {
-    content: '';
-    background: url('./img/gelocation.svg') no-repeat;
-    width: 22px;
-    height: 25px;
-    position: absolute;
-    top: 6px;
-    left: -5px;
-}
-
-.contact__iphone {
-    margin: 0px 0px 54px 0px;
-    padding-left: 28px;
-    position: relative;
-}
-
-.contact__iphone::before {
-    content: '';
-    background: url('./img/gelocation-call.svg') no-repeat;
-    width: 22px;
-    height: 25px;
-    position: absolute;
-    top: 6px;
-    left: -5px;
-}
-
-.iphone-contact {
+.contacts__data {
+    display: flex;
+    align-items: center;
     color: #222129;
     text-decoration: none;
     font-weight: 500;
-    font-size: 20.7502px;
-    line-height: 160%;
+    font-size: 20px;
+    line-height: 30px;
 }
 
-.contact__work {
+.contacts__data::before {
+    content: '';
+    display: block;
+    flex: none;
+    width: 22px;
+    height: 22px; 
+    border-radius: 50%;     
+    margin-right: 16px; 
+}
+
+.location {
+    margin-bottom: 32px;
+}
+
+.location::before {
+    background: #0B9CEF url(../images/location.svg) no-repeat center;  
+}
+
+.phone {
+    margin-bottom: 56px;
+}
+
+.phone::before {
+    background: #0B9CEF url(../images/phone.svg) no-repeat center;  
+}
+
+.contacts__work {
     font-style: normal;
     font-weight: 400;
-    font-size: 18.4446px;
-    line-height: 160%;
+    font-size: 18px;
+    line-height: 30px;
     color: #222129;
 }
 
-.gelocation__items {
+.geolocation__map {
     flex: 1 1 50%;
 }
 
-.gelocation__item {}
-
-/* Геолокация  ======== */
-
-
-
-@media (max-width: 576px) {
-    .contact__item {
-        padding: 12px 24px 37px 20px;
-    }
-}
-
-@media (max-width: 768px) {
-    .courier__content {
-        justify-content: center;
-        flex-wrap: wrap;
-        padding: 0px 10px 0px 10px;
-        margin-right: 0;
-    }
-
-    .contact__items {
-        margin: 0px 0px 24px 0px;
-    }
-}
-
-@media (min-width: 1200px) {}
-=======
-/* ---------- HEADER end ----------  */
+/* ---------- GEOLOCATION END----------  */
 
 /* ---------- FOOTER ----------  */
 .footer {
@@ -368,16 +359,8 @@ li::marker {
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
-    line-height: 160%;
+    line-height: 30px;
     color: #000000;
-}
-
-.container {
-    max-width: 1820px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 50px;
-    box-sizing: border-box;
 }
 
 .footer-top {
@@ -459,7 +442,7 @@ li::marker {
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
-    line-height: 160%;
+    line-height: 30px;
     color: #000000;
 }
 
@@ -517,17 +500,17 @@ li::marker {
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
-    line-height: 160%;
+    line-height: 30px;
     color: #000000;
 }
 
-.location {
+/* .location {
     position: relative;
     padding-left: 35px;
     width: 246px;
-}
+} */
 
-.location::before {
+/* .location::before {
     content: '';
     top: 3px;
     left: 0px;
@@ -535,9 +518,9 @@ li::marker {
     height: 20px;
     position: absolute;
     background-image: url(../images/map.svg);
-}
+} */
 
-.location a {
+/* .location a {
     color: #0B9CEF;
     background-color: #ffffff;
     position: relative;
@@ -549,7 +532,7 @@ li::marker {
 .location a:hover {
     background-color: #ffffff;
 
-}
+} */
 
 .contact__inner {
     padding: 15px;
@@ -679,113 +662,12 @@ li::marker {
 /* ---------- ACCORDION end ---------- */
 
 /* ---------- COMMENTS ----------  */
-.header-page {
-    max-width: 1920px;
-    width: 100%;
-    min-height: 137px;
-    background-image: linear-gradient(90deg, rgb(11, 156, 239, .75) 6.67%, rgb(163, 212, 239, .75) 94.66%), url('../images/banner-top.png');
-    padding-top: 24px;
-    padding-left: 164px;
-    margin-bottom: 135px;
-}
 
 /* ---------- COMMENTS end ----------  */
 
 /* style for price by MK */
 
-.header-page-price {
-    max-width: 1920px;
-    width: 100%;
-    min-height: 137px;
-    background-image: linear-gradient(90deg, rgb(11, 156, 239, .75) 6.67%, rgb(163, 212, 239, .75) 94.66%), url('../images/banner-top-page.jpg');
-    padding-top: 24px;
-    padding-left: 164px;
-    margin-bottom: 135px;
-}
 
-.heading {
-    font-size: 44px;
-    font-weight: 900;
-    font-style: italic;
-    line-height: 52px;
-    color: #FFFFFF;
-}
-
-.price__container {
-    padding: 0 280px;
-    margin-left: 0;
-    margin-right: 0;
-    max-width: 1242px;
-    margin: 0 auto;
-}
-
-.price__list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(348px, 312px));
-    grid-column-gap: 60px;
-    grid-row-gap: 54px;
-    grid-auto-flow: dense;
-    width: 100%;
-    justify-items: center;
-    grid-template-columns: repeat(auto-fit, minmax(312px, 348px));
-    column-gap: 90px;
-    row-gap: 53px;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.card-certificate {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 48px 26px 74px;
-    max-width: 348px;
-    border-radius: 6px;
-    background-color: #FFFFFF;
-    width: 100%;
-    border-radius: 6px;  
-    background-color: #FFFFFF;  
-}
-
-.card-certificate__picture {
-    max-width: 242px;
-    max-height: 136px;
-    object-fit: cover;
-    margin-bottom: 30px;
-}
-
-.card__short-descriprion {
-    max-width: 296px;
-    max-height: 66px;
-    text-align: center;
-    font-size: 13px;
-    font-weight: 500;
-    line-height: 22px;
-    margin-bottom: 24px;
-}
-
-.card__price {
-    max-width: 165px;
-    width: 100%;
-    border: 1.5px solid #0B9CEF;
-    text-align: center;
-    border-radius: 4px;
-    margin-bottom: 48px;
-}
-
-.price-value {
-    font-size: 18px;
-    line-height: 30px;
-}
-
-.card__button-buy {
-    display: block;
-    padding: 12px 60px;
-    border-radius: 25px;
-    background-color: #0B9CEF;
-    color: #FFFFFF;
-}
 
 /* ---------- COMMENTS ---------- */
 .comments {
@@ -842,7 +724,7 @@ li::marker {
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    line-height: 160%;
+    line-height: 30px;
 }
 
 .comment__text {
@@ -926,28 +808,17 @@ li::marker {
     padding: 0 27px !important;
     font-weight: 500 !important;
     font-size: 22px !important;
-    line-height: 160% !important;
+    line-height: 30px !important;
     color: #FFFFFF !important;
     background: #0B9CEF !important;
 }
 
 /* ---------- CF7 end ---------- */
 
-/* ---------- GELOCATION ---------- */
+/* ---------- GELOCATION ----------
 .comments-gelocation {
     max-width: 1592px;
     margin: 100px auto;
-}
-
-.gelocation {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 10px;
-    justify-content: center;
-}
-
-.contact__items {
-    margin: 0px 24px 24px 0px;
 }
 
 .contact__item {
@@ -972,7 +843,7 @@ li::marker {
     font-style: normal;
     font-weight: 500;
     font-size: 20.7502px;
-    line-height: 160%;
+    line-height: 30px;
     color: #222129;
 
     max-width: 336px;
@@ -1012,14 +883,14 @@ li::marker {
     text-decoration: none;
     font-weight: 500;
     font-size: 20.7502px;
-    line-height: 160%;
+    line-height: 30px;
 }
 
 .contact__work {
     font-style: normal;
     font-weight: 400;
     font-size: 18.4446px;
-    line-height: 160%;
+    line-height: 30px;
     color: #222129;
 }
 
@@ -1029,21 +900,9 @@ li::marker {
 
 .gelocation__item iframe {
     border: none;
-}
+} */
 
 /* ---------- GELOCATION end ---------- */
 
 /* ---------- COMMENTS end ---------- */
-=======
-    border: 1px solid transparent;
-    background-color: #0B9CEF;    
-    color: #FFFFFF;
-    transition-duration: .3s;
-    transition-timing-function: ease;
-}
 
-.card__button-buy:hover {
-    color: #0B9CEF;
-    background-color: #FFFFFF;
-    border: 1px solid #0B9CEF;
-}

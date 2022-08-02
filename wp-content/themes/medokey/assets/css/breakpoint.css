@@ -1,14 +1,13 @@
 /* ---------- HEADER----------  */
 @media (max-width: 576px) {
-    ...
+    
 }
 
 @media (max-width: 768px) {
-    .container {    
-        main
-        /* margin: 0 24px; */
+    .container {
+        padding: 0 24px;
     }
-
+    
     .header__bottom {
         flex-wrap: wrap;
         justify-content: space-around;
@@ -38,8 +37,8 @@
         width: 45px;
         height: 45px;
         border-radius: 50%;
-        background-image: url(../images/phone.svg);
-        background-color: #FFFFFF;
+        background: #0B9CEF url(../images/phone.svg) no-repeat center;
+      
     }
 }
 
@@ -83,10 +82,7 @@
 
 }
 
-@media (max-width: 576px) {
-    .container {
-        padding: 0;
-    }
+@media (max-width: 576px) {  
 
     .footer__logo {
         margin: 0 0 10px 15px;
@@ -146,7 +142,6 @@
 
 }
 
-
 /* ---------- FOOTER end----------  */
 
 /* ---------- COMMENTS ----------*/
@@ -170,73 +165,22 @@
     }
 }
 
-
 /* ---------- COMMENTS  end ----------  */
 
 /* ---------- GELOCATION ---------- */
-@media (max-width: 576px) {
-    .contact__items {
-        padding: 12px 24px 37px 20px;
-        margin: 0px 0px 24px 0px;
+@media (max-width: 768px) {
+    .courier__content {
+        flex-direction: column;
+        padding: 16px 32px;
     }
 
-    .contact__item {
-        padding: 12px 24px 37px 20px;
+    .courier__picture {
+        margin: 0 0 16px;
     }
+
+    .contacts {
+        padding: 16px 32px;        
+    }    
 }
 
 /* ---------- GELOCATION end ---------- */
-=======
-/* ---------- FOOTER end ----------  */
-
- /* page price */
-
- @media (max-width: 768px) {
-    .card-certificate {
-        max-width: 312px;
-        width: 100%;
-    }
-
-    .price__container {
-        padding: 0 30px;
-    }
-
-    .price__list {
-        column-gap: 50px;
-        row-gap: 30px; 
-    }
- }
-
-
- @media (max-width: 576px) {
-    .header-page-price {
-        margin-bottom: 28px;
-        padding-left: 25px;
-    }
-
-    .price__list {
-        grid-template-columns: 312px;
-        row-gap: 60px; 
-    }
-
-    .card-certificate__picture {
-        max-width: 216px;
-        max-height: auto;
-        margin-bottom: 27px;
-    }
-
-    .price__container {
-        max-width: 312px;
-        width: 100%;
-        padding: 0;
-        margin: 0 auto;
-    }
-
-    .card-certificate {
-        padding: 24px 24px 30px;
-        max-width: 348px;
-        width: 100%;
-        border-radius: 6px;  
-        background-color: #FFFFFF;  
-    }
- }
