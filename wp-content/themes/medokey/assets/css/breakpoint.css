@@ -1,195 +1,214 @@
 /* ---------- HEADER----------  */
-@media (max-width: 576px) { ... }
+@media (max-width: 576px) {}
 
 @media (max-width: 768px) {
-    .container {    
-        /* margin: 0 24px; */
+    .container {
+        padding: 0 24px;
     }
 
-   .header__bottom {       
+    .header__bottom {
         flex-wrap: wrap;
         justify-content: space-around;
-   } 
-
-   .header__phone {
-        display: block!important;
     }
 
-   .header__search {
+    .header__phone {
+        display: block !important;
+    }
+
+    .header__search {
         width: 100%;
-   }
+    }
+    
+    .left__contacts {
+        margin-right: 0px;
+        text-align: center;
+    }
 }
 
-@media (max-width: 1200px) { 
+@media (max-width: 1200px) {
     .header__phone {
         display: none;
     }
+
     .header__button {
         display: none;
     }
+
     .header__button--mobile {
         display: block;
         flex: none;
         width: 45px;
-        height: 45px;        
+        height: 45px;
         border-radius: 50%;
-        background-image: url(../images/phone.svg);
-        background-color: #FFFFFF;
+        background: #0B9CEF url(../images/phone.svg) no-repeat center;
+
     }
- }
- 
- /* ---------- HEADER end ----------  */
+}
+
+/* ---------- HEADER end ----------  */
 
 /* ---------- FOOTER----------  */
+
+@media (max-width: 576px) {  
+    .footer-paymets {
+        display: none;
+    }   
+    
+    .footer__time-work,
+    .footer__location {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    
+}
+
 @media (max-width: 1200px) {
+    .footer {
+        padding: 16px 0 10px;
+        margin-top: 24px;
+    }
+    
     .footer-top {
-        gap: 30px;
-        justify-content: space-between;
-        grid-template-columns: repeat(auto-fit, minmax(130px, 230px));
+        flex-direction: column;        
+        margin-bottom: 10px;
+    }
+    .footer__nav {
+        display: none;
+    }   
+
+   .footer__info-block {
+        margin-top: 10px;
+    }
+
+    .call-block {
+        display: none;
     }
 
     .footer-bottom {
-        display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
         align-items: center;
+        padding-top: 10px;
+    }
+
+   .copyright {
+        max-width: 100%;
         text-align: center;
+        margin-bottom: 10px;
+   }
+
+   .footer-paymets {
+        margin-bottom: 10px;
+   }
+
+   #mega-menu-wrap-max_mega_menu_2 {
+      display: block;
+   }
+    
+}
+
+/* ---------- FOOTER end----------  */
+
+/* ---------- COMMENTS ----------*/
+@media (max-width: 768px) {
+    .comment {
+        flex-direction: column;
     }
 
-    .footer__nav-left {
-        grid-area: 2/1/3/2;
+    .comment .inner {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 576px) {
+    .wpcf7-form-control-wrap input[type="text"] {
+        width: 100%;
     }
 
-    .footer__nav-right {
-        grid-area: 2/2/3/3;
+    .wpcf7-form-control-wrap input[type="email"] {
+        width: 100%;
+    }
+}
+
+/* ---------- COMMENTS  end ----------  */
+
+/* ---------- GELOCATION ---------- */
+@media (max-width: 768px) {
+    .courier__content {
+        flex-direction: column;
+        padding: 16px 32px;
     }
 
-    .footer__info-block {
-
-        grid-area: 1/2/2/3;
+    .courier__picture {
+        margin: 0 0 16px;
     }
 
-    .footer-top {
-        gap: 20px;
+    .contacts {
+        padding: 16px 32px;
+    }
+}
+
+/* ---------- GELOCATION end ---------- */
+
+/* ---------- ARCHIVE ---------- */
+@media (max-width: 768px) {
+    .article {
+        flex-direction: column;
+        padding: 15px;
     }
 
-    .call-block__btn-footor {
-        margin-top: 10px;
+    .article .inner {
+        flex-direction: column;
+    }
+}
+
+/* ---------- ARCHIVE end ---------- */
+
+
+/* ---------- ORDERING ---------- */
+@media (max-width: 1024px) {
+    .ordering__info {
+        justify-items: center;
+    }
+
+    .info__item {
+        max-width: 485px;
     }
 
 }
 
 @media (max-width: 576px) {
-    .container {
-        padding: 0;
+
+    .ordering__info {
+        grid-template-columns: 1fr;
     }
 
-    .footer__logo {
-        margin: 0 0 10px 15px;
-    }
-
-
-    .logo {
-        max-width: 191px;
-    }
-
-    .footer-top {
-        padding: 10px 0;
-        box-sizing: border-box;
-        display: flex;
-        flex-direction: column;
-        gap: 0;
-    }
-
-    .footer-bottom {
-        display: flex;
-        flex-direction: column;
-        padding: 0 15px;
-        border-top: none;
-    }
-
-    .footer__nav-left,
-    .footer__nav-right,
-    .footer-paymets,
-    .footer__info-block {
-        display: none;
-    }
-
-    .footer-bottom .write-me a {
-        margin-top: 15px;
-        color: #0B9CEF;
-        background-color: #ffffff;
-        position: relative;
-        display: block;
-        padding: 0;
-        text-decoration: underline;
-    }
-
-    .footer__info-block {
-        display: none;
-    }
-
-    .line {
-        border-bottom: 1px solid #EBEBEB;
+    .info__item {
+        padding: 15px 15px;
         width: 100%;
-        /* линия */
+        flex-direction: column;
     }
 
-    .copyright {
-        padding-bottom: 20px;
+    .info__item .wrap {
+        margin: 5px 0 0 0;
     }
+
+    .info__pic {
+        min-width: 55px;
+        min-height: 55px;
+    }
+
+ }
+ @media (max-width: 1440px) {
+    .direction__head {
+        flex-direction: column;
+        margin: 0px 0px 20px 0px;
+    }
+ } 
+
 
 }
 
-/* ---------- FOOTER end ----------  */
+/* ---------- ORDERING end ---------- */
 
- /* page price */
-
- @media (max-width: 768px) {
-    .card-certificate {
-        max-width: 312px;
-        width: 100%;
-    }
-
-    .price__container {
-        padding: 0 30px;
-    }
-
-    .price__list {
-        column-gap: 50px;
-        row-gap: 30px; 
-    }
- }
-
-
- @media (max-width: 576px) {
-    .header-page-price {
-        margin-bottom: 28px;
-        padding-left: 25px;
-    }
-
-    .price__list {
-        grid-template-columns: 312px;
-        row-gap: 60px; 
-    }
-
-    .card-certificate__picture {
-        max-width: 216px;
-        max-height: auto;
-        margin-bottom: 27px;
-    }
-
-    .price__container {
-        max-width: 312px;
-        width: 100%;
-        padding: 0;
-        margin: 0 auto;
-    }
-
-    .card-certificate {
-        padding: 24px 24px 30px;
-        max-width: 348px;
-        width: 100%;
-        border-radius: 6px;  
-        background-color: #FFFFFF;  
-    }
- }
