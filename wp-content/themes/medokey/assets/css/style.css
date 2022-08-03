@@ -477,3 +477,66 @@ body {
     background-color: #FFFFFF;
     border: 1px solid #0B9CEF;
 }
+
+
+
+/* single-product */
+
+.card-certificate--detail {    
+    width: 408px;
+    width: 100%;
+    padding: 56px 62px 0;
+    border: 2px solid #CACACA;
+    border-radius: 7px;
+    background-color: #FFFFFF;
+    float: right;
+    margin-left: 72px;
+    margin-bottom: 72px;
+}
+
+.card-certificate__picture--detail {
+    display: block;
+    max-width: 284px;
+    max-height: 160px;
+    margin-bottom: 16px;    
+}
+
+.card-certificate__image--detail {
+    object-fit: cover;
+    width: 100%;
+
+}
+
+.text-block-left {
+    float: left;
+    max-width: 1074px;
+    width: 100%;
+}
+
+.name-category {
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 16px;
+    color: #636363;
+    text-align: center;
+}
+
+.card-certificate__card-action {
+    display: block;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32px;
+    max-width: 218px;   
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.card__button-buy--detail {
+    margin-bottom: 36px;
+}
+
+.detail__heading {
+    clear: none;
+}
