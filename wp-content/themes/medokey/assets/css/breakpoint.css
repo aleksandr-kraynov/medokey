@@ -1,13 +1,11 @@
 /* ---------- HEADER----------  */
-@media (max-width: 576px) {
-    
-}
+@media (max-width: 576px) {}
 
 @media (max-width: 768px) {
     .container {
         padding: 0 24px;
     }
-    
+
     .header__bottom {
         flex-wrap: wrap;
         justify-content: space-around;
@@ -19,6 +17,11 @@
 
     .header__search {
         width: 100%;
+    }
+    
+    .left__contacts {
+        margin-right: 0px;
+        text-align: center;
     }
 }
 
@@ -38,7 +41,7 @@
         height: 45px;
         border-radius: 50%;
         background: #0B9CEF url(../images/phone.svg) no-repeat center;
-      
+
     }
 }
 
@@ -71,7 +74,6 @@
         flex-direction: column;        
         margin-bottom: 10px;
     }
-
     .footer__nav {
         display: none;
     }   
@@ -101,8 +103,9 @@
    }
 
    #mega-menu-wrap-max_mega_menu_2 {
-    display: block;
-    }
+      display: block;
+   }
+    
 }
 
 /* ---------- FOOTER end----------  */
@@ -142,8 +145,70 @@
     }
 
     .contacts {
-        padding: 16px 32px;        
-    }    
+        padding: 16px 32px;
+    }
 }
 
 /* ---------- GELOCATION end ---------- */
+
+/* ---------- ARCHIVE ---------- */
+@media (max-width: 768px) {
+    .article {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .article .inner {
+        flex-direction: column;
+    }
+}
+
+/* ---------- ARCHIVE end ---------- */
+
+
+/* ---------- ORDERING ---------- */
+@media (max-width: 1024px) {
+    .ordering__info {
+        justify-items: center;
+    }
+
+    .info__item {
+        max-width: 485px;
+    }
+
+}
+
+@media (max-width: 576px) {
+
+    .ordering__info {
+        grid-template-columns: 1fr;
+    }
+
+    .info__item {
+        padding: 15px 15px;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .info__item .wrap {
+        margin: 5px 0 0 0;
+    }
+
+    .info__pic {
+        min-width: 55px;
+        min-height: 55px;
+    }
+
+ }
+ @media (max-width: 1440px) {
+    .direction__head {
+        flex-direction: column;
+        margin: 0px 0px 20px 0px;
+    }
+ } 
+
+
+}
+
+/* ---------- ORDERING end ---------- */
+
