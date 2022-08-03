@@ -40,9 +40,9 @@ get_header();
                     <div class="card__price">
                         <span class="price-value">1000 руб</span>
                     </div> 
-                    <button class="card__button">
-                        Заказать
-                    </button>
+                    <div class="card__button-wrapper">
+                        <a class="card__button-buy" href="">Заказать</a>
+                    </div>
                 </div>
             </li>
             <li class="list__item">
@@ -54,9 +54,9 @@ get_header();
                     <div class="card__price">
                         <span class="price-value">600 руб</span>
                     </div> 
-                    <button class="card__button">
-                        Заказать
-                    </button>
+                    <div class="card__button-wrapper">
+                        <a class="card__button-buy" href="">Заказать</a>
+                    </div>
                 </div>
             </li>
             <li class="list__item">
@@ -68,9 +68,9 @@ get_header();
                     <div class="card__price">
                         <span class="price-value">1200 руб</span>
                     </div> 
-                    <button class="card__button">
-                        Заказать
-                    </button>
+                    <div class="card__button-wrapper">
+                        <a class="card__button-buy" href="">Заказать</a>
+                    </div>
                 </div>
             </li>
             <li class="list__item">
@@ -82,9 +82,9 @@ get_header();
                     <div class="card__price">
                         <span class="price-value">1000 руб</span>
                     </div> 
-                    <button class="card__button">
-                        Заказать
-                    </button>
+                    <div class="card__button-wrapper">
+                        <a class="card__button-buy" href="">Заказать</a>
+                    </div>
                 </div>
             </li>
             <li class="list__item">
@@ -96,9 +96,9 @@ get_header();
                     <div class="card__price">
                         <span class="price-value">600 руб</span>
                     </div> 
-                    <button class="card__button">
-                        Заказать
-                    </button>
+                    <div class="card__button-wrapper">
+                        <a class="card__button-buy" href="">Заказать</a>
+                    </div>
                 </div>
             </li>
             <li class="list__item">
@@ -110,9 +110,9 @@ get_header();
                     <div class="card__price">
                         <span class="price-value">1200 руб</span>
                     </div> 
-                    <button class="card__button">
-                        Заказать
-                    </button>
+                    <div class="card__button-wrapper">
+                        <a class="card__button-buy" href="">Заказать</a>
+                    </div>
                 </div>
             </li>
             <li class="list__item">
@@ -124,9 +124,9 @@ get_header();
                     <div class="card__price">
                         <span class="price-value">1000 руб</span>
                     </div> 
-                    <button class="card__button">
-                        Заказать
-                    </button>
+                    <div class="card__button-wrapper">
+                        <a class="card__button-buy" href="">Заказать</a>
+                    </div>
                 </div>
             </li>
             <li class="list__item">
@@ -138,9 +138,9 @@ get_header();
                     <div class="card__price">
                         <span class="price-value">600 руб</span>
                     </div> 
-                    <button class="card__button">
-                        Заказать
-                    </button>
+                    <div class="card__button-wrapper">
+                        <a class="card__button-buy" href="">Заказать</a>
+                    </div>
                 </div>
             </li>
             <li class="list__item">
@@ -152,9 +152,9 @@ get_header();
                     <div class="card__price">
                         <span class="price-value">1200 руб</span>
                     </div> 
-                    <button class="card__button">
-                        Заказать
-                    </button>
+                    <div class="card__button-wrapper">
+                        <a class="card__button-buy" href="">Заказать</a>
+                    </div>
                 </div>
             </li>
             <li class="list__item">
@@ -166,9 +166,9 @@ get_header();
                     <div class="card__price">
                         <span class="price-value">1000 руб</span>
                     </div> 
-                    <button class="card__button">
-                        Заказать
-                    </button>
+                    <div class="card__button-wrapper">
+                        <a class="card__button-buy" href="">Заказать</a>
+                    </div>
                 </div>
             </li>
             <li class="list__item">
@@ -180,9 +180,9 @@ get_header();
                     <div class="card__price">
                         <span class="price-value">600 руб</span>
                     </div> 
-                    <button class="card__button">
-                        Заказать
-                    </button>
+                    <div class="card__button-wrapper">
+                        <a class="card__button-buy" href="">Заказать</a>
+                    </div>
                 </div>
             </li>
         </ul>
