@@ -140,6 +140,7 @@ body {
     border: 1px solid #0B9CEF;
     text-align: center;
     border-radius: 4px;
+    margin: 0 auto;
     margin-bottom: 48px;
 }
 
@@ -148,15 +149,22 @@ body {
     line-height: 30px;
 }
 
-.card__button {
-    display: block;
-    padding: 16px 64px;
-    border-radius: 25px;
-    background-color: #0B9CEF;
-    color: #FFFFFF;
+.card__button-wrapper {
+    text-align: center;
 }
 
-.card__button:hover {
+.card__button-buy {
+    display: inline-block;
+    padding: 16px 64px;
+    border-radius: 25px;
+    border: 1px solid transparent;
+    background-color: #0B9CEF;
+    color: #FFFFFF;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.card__button-buy:hover {
     color: #0B9CEF;
     background-color: #FFFFFF;
     border: 1px solid #0B9CEF;
@@ -1015,6 +1023,72 @@ body {
     padding: 0 15px;
     background-color: #FFFFFF;
     box-shadow: 0 2px 4px rgba(0, 0, 0, .25);
+}
+
+
+
+/* single-product */
+
+.container-medium {
+    padding: 0 165px;
+}
+
+.card-certificate--detail {    
+    max-width: 408px;
+    width: 100%;
+    padding: 56px 62px 0;
+    border: 1px solid #EBEBEB;
+    border-radius: 7px;
+    background-color: #FFFFFF;
+    margin-left: 72px;
+    margin-bottom: 72px;
+    float: right;
+}
+
+.card-certificate__picture--detail {
+    display: block;
+    max-width: 284px;
+    margin-bottom: 16px;    
+}
+
+.card-certificate__image--detail {
+    object-fit: cover;
+    width: 100%;
+
+}
+
+.name-category {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 16px;
+    color: #636363;
+    text-align: center;
+    margin: 8px 0;
+}
+
+.card-certificate__card-action {
+    display: block;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32px;
+    max-width: 218px;   
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 24px;
+}
+
+.card__button-buy--detail {
+    margin-bottom: 36px;
+}
+
+.card__price--detail {
+    margin-bottom: 45px;
+}
+
+.detail__heading {
+    clear: none;
 }
 
 .article {
