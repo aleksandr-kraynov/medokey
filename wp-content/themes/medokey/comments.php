@@ -13,8 +13,8 @@ get_header()
         </div>
     </div>
 </div>
-
-<div class="comments">
+<div class="container container--page">
+    <div class="comments">
     <div class="comment">
         <div class="inner">            
             <div class="wrap">
@@ -126,12 +126,23 @@ get_header()
     </div>
     
 </div>
-<div class="comments-cf7">
-    <h2 class="comments-cf7__title">Пажалуйста, оставьте отзыв</h2>
-<?php echo do_shortcode( '[contact-form-7 id="25" title="Пажалуйста, оставьте отзыв"]' ); ?>
-</div>
+<!-- <div class="comments-cf7">
+ <?php echo do_shortcode( '[contact-form-7 id="68" title="Untitled"]' ); ?>
+</div> -->
+<form class="comments__form form">
+<h2 class="comments__form-title">Пажалуйста, оставьте отзыв</h2> 
+    <label class="form__title form__title--comments">Ваш e-mail не будет опубликован. Обязательные поля помечены *
+        <textarea class="form__textarea form__textarea--comments" type="text" name="your-message" placeholder="Напишите отзыв здесь" ></textarea>
+    </label>
+    <input class="form__input form__input--comments" type="text" name="username" placeholder="Имя *" required>
+    <input class="form__input form__input--comments" type="text" name="your-email" placeholder="Email *" required>
+  <button class="comments__button button">Оставить отзыв</button>
+</form>
+
 
 <?php get_template_part('location'); ?>
+</div>
+
 
 <? get_footer()
 ?>

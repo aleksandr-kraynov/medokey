@@ -18,7 +18,7 @@
     .header__search {
         width: 100%;
     }
-    
+
     .left__contacts {
         margin-right: 0px;
         text-align: center;
@@ -49,36 +49,35 @@
 
 /* ---------- FOOTER----------  */
 
-@media (max-width: 576px) {  
+@media (max-width: 576px) {
     .footer-paymets {
         display: none;
-    }   
-    
+    }
+
     .footer__time-work,
     .footer__location {
         width: 100%;
     }
 }
 
-@media (max-width: 768px) {
-    
-}
+@media (max-width: 768px) {}
 
 @media (max-width: 1200px) {
     .footer {
         padding: 16px 0 10px;
         margin-top: 24px;
     }
-    
+
     .footer-top {
-        flex-direction: column;        
+        flex-direction: column;
         margin-bottom: 10px;
     }
+
     .footer__nav {
         display: none;
-    }   
+    }
 
-   .footer__info-block {
+    .footer__info-block {
         margin-top: 10px;
     }
 
@@ -92,20 +91,20 @@
         padding-top: 10px;
     }
 
-   .copyright {
+    .copyright {
         max-width: 100%;
         text-align: center;
         margin-bottom: 10px;
-   }
+    }
 
-   .footer-paymets {
+    .footer-paymets {
         margin-bottom: 10px;
-   }
+    }
 
-   #mega-menu-wrap-max_mega_menu_2 {
-      display: block;
-   }
-    
+    #mega-menu-wrap-max_mega_menu_2 {
+        display: block;
+    }
+
 }
 
 /* ---------- FOOTER end----------  */
@@ -114,6 +113,7 @@
 @media (max-width: 768px) {
     .comment {
         flex-direction: column;
+        padding: 20px;
     }
 
     .comment .inner {
@@ -185,7 +185,7 @@
     }
 
     .info__item {
-        padding: 15px 15px;
+        padding: 25px;
         width: 100%;
         flex-direction: column;
     }
@@ -195,20 +195,21 @@
     }
 
     .info__pic {
+        align-self: flex-start;
         min-width: 55px;
         min-height: 55px;
     }
 
- }
- @media (max-width: 1440px) {
+}
+
+@media (max-width: 1440px) {
     .direction__head {
         flex-direction: column;
         margin: 0px 0px 20px 0px;
     }
- } 
+}
 
 
 }
 
 /* ---------- ORDERING end ---------- */
-

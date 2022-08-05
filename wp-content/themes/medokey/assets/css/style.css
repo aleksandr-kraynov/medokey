@@ -9,11 +9,11 @@ body {
 }
 
 .container--heading {
-    max-width: 1592px;    
+    max-width: 1592px;
 }
 
 .container--page {
-    max-width: 1292px;    
+    max-width: 1292px;
 }
 
 
@@ -27,11 +27,38 @@ body {
     background: #0B9CEF;
     color: #FFFFFF;
     padding: 16px 32px;
-    border-radius: 25px;    
+    border-radius: 25px;
     border: none;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     cursor: pointer;
     flex: none;
+}
+
+.form {
+    flex: 1 1 50%;
+    max-width: 418px;
+    height: fit-content;
+    background: #FFFFFF;
+    padding: 24px 36px;
+    border-radius: 8px;
+}
+
+.form__title {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+}
+
+.form__input {
+    background: #F1F1F1;
+    border: 0;
+    border-radius: 4px;
+    padding: 10px 14px;
+    margin-top: 10px;
+}
+
+.form__button {
+    width: 100%;
 }
 
 /* ---------- HEADER----------  */
@@ -44,8 +71,8 @@ body {
     max-width: 1824px;
 }
 
-.header-page--price {    
-    background: linear-gradient(90deg, rgb(11, 156, 239, .75) 6.67%, rgb(163, 212, 239, .75) 94.66%), url('../images/banner-top-page.jpg') no-repeat center; 
+.header-page--price {
+    background: linear-gradient(90deg, rgb(11, 156, 239, .75) 6.67%, rgb(163, 212, 239, .75) 94.66%), url('../images/banner-top-page.jpg') no-repeat center;
 }
 
 .header__nav {
@@ -93,14 +120,14 @@ body {
     color: #FFFFFF;
 }
 
-.price__list {   
+.price__list {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     list-style: none;
     margin: 0;
-    padding: 0;  
-    gap: 48px; 
+    padding: 0;
+    gap: 48px;
 }
 
 .list__item {
@@ -112,13 +139,13 @@ body {
     flex-direction: column;
     align-items: center;
     padding: 48px 54px 72px;
-    width: 100%;   
-    border: 1px solid #EBEBEB; 
-    border-radius: 6px;  
-    background-color: #FFFFFF;  
+    width: 100%;
+    border: 1px solid #EBEBEB;
+    border-radius: 6px;
+    background-color: #FFFFFF;
 }
 
-.card__picture {    
+.card__picture {
     max-height: 136px;
     object-fit: cover;
     margin-bottom: 30px;
@@ -177,15 +204,15 @@ body {
 .courier__content {
     display: flex;
     align-items: center;
-    border: 1px solid #EBEBEB; 
+    border: 1px solid #EBEBEB;
     background: #fff;
-    border-radius: 8px;    
+    border-radius: 8px;
     padding: 0px 64px;
-    margin-bottom: 64px;    
+    margin-bottom: 64px;
 }
 
-.courier__picture {   
-    margin-right: 48px;    
+.courier__picture {
+    margin-right: 48px;
 }
 
 .courier__image {
@@ -205,11 +232,11 @@ body {
     display: flex;
     justify-content: center;
     gap: 56px;
-    flex-wrap: wrap;         
+    flex-wrap: wrap;
 }
 
-.courier-services__item {  
-    display: flex;    
+.courier-services__item {
+    display: flex;
     flex: 1 1 47%;
     width: 568px;
     background: #FFFFFF;
@@ -224,8 +251,8 @@ body {
     flex: none;
     width: 60px;
     height: 60px;
-    border-radius: 50%;        
-    margin-right: 24px;    
+    border-radius: 50%;
+    margin-right: 24px;
 }
 
 .time::before {
@@ -262,7 +289,7 @@ body {
 }
 
 .delivery-location__list {
-   margin: 0;   
+    margin: 0;
 }
 
 .delivery-location__item {
@@ -279,17 +306,18 @@ body {
 /* ---------- GEOLOCATION----------  */
 
 .geolocation {
+    margin-top: 60px;
     display: flex;
-    flex-wrap: wrap; 
-    justify-content: center;    
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 24px;
 }
 
 .contacts {
     background: #FFFFFF;
     box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.06);
-    border-radius: 8px;    
-    padding: 56px 96px;   
+    border-radius: 8px;
+    padding: 56px 96px;
     flex: 1 1 48%;
 }
 
@@ -308,7 +336,7 @@ body {
     font-weight: 500;
     font-size: 20px;
     line-height: 30px;
-    color: #222129;    
+    color: #222129;
     margin-bottom: 33px;
 }
 
@@ -327,9 +355,9 @@ body {
     display: block;
     flex: none;
     width: 22px;
-    height: 22px; 
-    border-radius: 50%;     
-    margin-right: 16px; 
+    height: 22px;
+    border-radius: 50%;
+    margin-right: 16px;
 }
 
 .location {
@@ -337,7 +365,7 @@ body {
 }
 
 .location::before {
-    background: #0B9CEF url(../images/location.svg) no-repeat center;  
+    background: #0B9CEF url(../images/location.svg) no-repeat center;
 }
 
 .phone {
@@ -345,7 +373,7 @@ body {
 }
 
 .phone::before {
-    background: #0B9CEF url(../images/phone.svg) no-repeat center;  
+    background: #0B9CEF url(../images/phone.svg) no-repeat center;
 }
 
 .contacts__work {
@@ -375,12 +403,12 @@ body {
     margin-top: 60px;
 }
 
-.footer-top {   
+.footer-top {
     display: flex;
     justify-content: space-between;
     margin-bottom: 90px;
-}  
-    
+}
+
 .footer-bottom {
     display: flex;
     padding-top: 30px;
@@ -412,16 +440,16 @@ body {
 .footer__info-block {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;   
+    justify-content: space-between;
 }
 
 .call-block {
     display: flex;
-    flex-direction: column;    
+    flex-direction: column;
 }
 
 .footer__time-work::before {
-    content:'';    
+    content: '';
     width: 20px;
     height: 20px;
     background: url(../images/clock-footer.svg) no-repeat center;
@@ -430,7 +458,7 @@ body {
 }
 
 .footer__location::before {
-    content:'';
+    content: '';
     width: 20px;
     height: 20px;
     background: url(../images/location-footer.svg) no-repeat center;
@@ -460,13 +488,13 @@ body {
 }
 
 .footer__time-work {
-    display: flex;    
+    display: flex;
     align-items: center;
     font-size: 16px;
 }
 
 .footer__location {
-    display: flex;    
+    display: flex;
     align-items: center;
     font-size: 16px;
 }
@@ -515,17 +543,16 @@ body {
 .comments {
     display: grid;
     grid-auto-columns: 1fr;
-    padding: 0 15px;
     gap: 20px;
 }
 
 .comment {
     margin: 0 auto;
-    max-width: 1380px;
+    /* max-width: 1380px; */
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 28px 28px 28px 50px;
+    padding: 25px;
     background: #FFFFFF;
     border-radius: 6px;
 }
@@ -595,64 +622,46 @@ body {
 
 }
 
-/* ---------- CF7 end ---------- */
-#wpcf7-f25-o1 {}
+/* ---------- CF7 ---------- */
 
-.comments-cf7 {
+.comments__form {
     margin: 0 auto;
-    padding: 0 15px;
-    max-width: 1152px;
+    max-width: 1150px;
     width: 100%;
 }
 
-.comments-cf7 p {
-    margin: 0;
-}
-
-.comments-cf7__title {
+.comments__form-title {
     text-align: center;
     font-style: normal;
     font-weight: 400;
-    font-size: 27.88px;
+    font-size: 28px;
     line-height: 120%;
     color: #1B1918;
+
 }
 
-.cf7-text-reviews {
-    margin-top: 5px;
-}
-
-.cf7-text-reviews,
-.cf7-name-reviews,
-.cf7-email-reviews {
-    background: #F1F1F1;
+.form__input--comments,
+.form__textarea--comments {
+    background: #F1F1F1 !important;
+    opacity: 1 !important;
     border: 0.5px solid #0B9CEF !important;
-    border-radius: 8.5798px !important;
 }
 
-.cf7-text-reviews {
-    padding: 30px 36px;
+.form__textarea--comments {
+    height: 260px;
+    resize: none;
+    margin: 0 !important;
 }
 
-.wpcf7-form-control-wrap input[type="text"] {
-    padding: 12px 36px;
+.form__input--comments {
+    padding: 12px 35px !important;
+    max-width: 640px;
 }
 
-.wpcf7-form-control-wrap input[type="email"] {
-    padding: 12px 36px;
-}
-
-.cf7-submit-reviews {
-    margin-top: 38px;
+.comments__button {
     width: 100%;
-    height: 70px;
-    border-radius: 15px !important;
-    padding: 0 27px !important;
-    font-weight: 500 !important;
-    font-size: 22px !important;
-    line-height: 160% !important;
-    color: #FFFFFF !important;
-    background: #0B9CEF !important;
+    margin-top: 30px;
+    border-radius: 15px;
 }
 
 /* ---------- CF7 end ---------- */
@@ -666,10 +675,12 @@ body {
     height: 100%;
     background: #F5F5F5;
 }
+
 .order__container {
     max-width: 1244px;
     margin: 0 auto;
 }
+
 .order__title {
     font-style: normal;
     font-weight: 700;
@@ -680,6 +691,7 @@ body {
 
     margin: 0px 0px 81px 0px;
 }
+
 .contact__specialist {
     margin: 81px 0px 94px 15px;
 }
@@ -688,6 +700,7 @@ body {
     display: flex;
     flex-wrap: wrap;
 }
+
 .choice-payment__element {
     flex: 1 1 348px;
     text-align: center;
@@ -695,18 +708,20 @@ body {
 
     margin: 0px 0px 8px 0px;
 }
+
 .choice-content {
     background: #FFFFFF;
     border-radius: 6px;
     height: 400px;
     padding: 66px;
-    
+
 }
+
 .choice-payment__picture {
     display: flex;
     height: 143px;
     justify-content: center;
-   
+
 }
 
 .choice-payment__description {
@@ -728,17 +743,17 @@ body {
 }
 
 /* Геолокация  ======== */
-.container__gelocation {
+/* .container__gelocation {
     max-width: 1592px;
     margin: 0 auto;
-}
+} */
 
-.gelocation {
+/* .gelocation {
     display: flex;
     flex-wrap: wrap;
     margin: 0 10px;
     justify-content: center;
-}
+} */
 
 .contact__items {
     margin: 0px 24px 24px 0px;
@@ -831,24 +846,27 @@ body {
     display: flex;
     flex-wrap: wrap;
 }
+
 .left__contacts {
     flex: 1 1 45%;
     margin-right: 98px;
 }
+
 .left__contacts p {
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
     line-height: 34px;
     color: #222129;
-    
+
 }
+
 .contacts__menu {
     margin: 0px 0px 20px 0px;
 }
 
 .contacts__link {
-    color:#0496EA;
+    color: #0496EA;
 }
 
 .contacts__list {
@@ -881,10 +899,11 @@ body {
 .feedback__form {
     display: flex;
     flex-direction: column;
-    
+
 }
 
-.form__textarea,.form__input {
+.form__textarea,
+.form__input {
     width: 100%;
     background: #F1F1F1;
     border-radius: 6px;
@@ -893,14 +912,15 @@ body {
     margin: 15px 0px 30px 0px;
 }
 
-.form__input,.form__textarea::placeholder {
+.form__input,
+.form__textarea::placeholder {
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 120%;
     color: #0D0D0D;
     opacity: 0.4;
-    
+
 }
 
 .form__label {
@@ -908,7 +928,7 @@ body {
     font-size: 16px;
     line-height: 120%;
     color: #222129;
-    
+
 }
 
 .button__form {
@@ -923,6 +943,7 @@ body {
     border-radius: 25px;
     padding: 13px 0px;
 }
+
 /* Конец Блока Контакты ==============
 ===================== */
 
@@ -933,12 +954,14 @@ body {
     margin: 0 auto;
     padding: 0 15px;
 }
+
 .direction__head {
     display: flex;
     justify-content: space-between;
-    align-items:center;
+    align-items: center;
     flex-wrap: wrap;
 }
+
 .direction__title {
     font-style: normal;
     font-weight: 500;
@@ -946,13 +969,16 @@ body {
     line-height: 120%;
     color: #222129;
 }
+
 .direction__date {
-   display: flex;
-   align-items:center;
+    display: flex;
+    align-items: center;
 }
+
 .date__month {
     position: relative;
 }
+
 .date__month::before {
     content: '';
     width: 18px;
@@ -962,10 +988,12 @@ body {
     top: 4px;
     left: -30px;
 }
+
 .date__quantity {
     margin: 0px 0px 0px 61px;
     position: relative;
 }
+
 .date__quantity::before {
     content: '';
     width: 18px;
@@ -975,6 +1003,7 @@ body {
     top: 4px;
     left: -30px;
 }
+
 .body__title {
     font-style: normal;
     font-weight: 600;
@@ -982,6 +1011,7 @@ body {
     line-height: 120%;
     color: #222129;
 }
+
 .body__text {
     font-style: normal;
     font-weight: 400;
@@ -989,15 +1019,19 @@ body {
     line-height: 160%;
     color: #222129;
 }
+
 .body__menu {
     margin: 0;
 }
+
 .body__list::marker {
     color: #000;
 }
+
 .body__link {
-    color:#0B9CEF;
+    color: #0B9CEF;
 }
+
 /* Конец Блока Статья ==============
 ===================== */
 
@@ -1007,7 +1041,7 @@ body {
 
 /* ---------- COMMENTS end ---------- */
 
-/* ---------- ARTICLES ---------- */
+/* ---------- ARCHIVE ---------- */
 
 .archive {
     display: grid;
@@ -1033,7 +1067,7 @@ body {
     padding: 0 165px;
 }
 
-.card-certificate--detail {    
+.card-certificate--detail {
     max-width: 408px;
     width: 100%;
     padding: 56px 62px 0;
@@ -1048,7 +1082,7 @@ body {
 .card-certificate__picture--detail {
     display: block;
     max-width: 284px;
-    margin-bottom: 16px;    
+    margin-bottom: 16px;
 }
 
 .card-certificate__image--detail {
@@ -1073,7 +1107,7 @@ body {
     font-size: 24px;
     font-weight: 500;
     line-height: 32px;
-    max-width: 218px;   
+    max-width: 218px;
     text-align: center;
     margin: 0 auto;
     margin-bottom: 24px;
@@ -1201,7 +1235,7 @@ body {
     border-bottom: 1px solid #d5cbcb;
 }
 
-/* ---------- ARTICLES end ---------- */
+/* ---------- ARCHIVE end ---------- */
 
 /* ---------- ORDERING ---------- */
 
@@ -1232,9 +1266,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 80px;
-    min-width: 80px;
-    height: 80px;
+    min-width: 60px;
+    height: 60px;
     background: #0B9CEF;
     border-radius: 50%;
     box-shadow: 0px 32.882px 43.1577px rgba(11, 156, 239, 0.13);
@@ -1264,4 +1297,3 @@ body {
 
 
 /* ---------- ORDERING end ---------- */
-
