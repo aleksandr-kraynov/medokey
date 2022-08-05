@@ -5,10 +5,17 @@ get_header();
 
 ?>
 
-	<div class="container container-medium">
-		<p class="product-text">
-		Каждому абитуриенту при поступлении в выбранное учебное заведение необходимо предоставить определенный пакет документов. В обязательном порядке в данный перечень входит справка формы 086/у. Ее оформление в обычной поликлинике может занять много времени и сил. А сдача анализов и вовсе может превратиться в страшное испытание. Часы, потерянные на простаивание в очередях к доктору можно потратить на что-то полезное. Наиболее подходящим выходом в данной ситуации является покупка медицинской справки 086/у. Главное - покупать документ у проверенных представителей.
-		</p>		
+<div class="header-page header-page--price">
+    <div class="container container--heading">
+        <div class="breadcrumb"></div>
+        <div class="page-heading">
+            <h1 class="heading">справка 086 у для вуза</h1>
+        </div>
+    </div>
+</div>
+
+	<div class="container container--heading">
+				
 		<div class="card-certificate card-certificate--detail">
 			<picture class="card-certificate__picture card-certificate__picture--detail">
 				<img class="card-certificate__image card-certificate__image--detail" src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/086u.jpg" alt="" >
@@ -17,13 +24,14 @@ get_header();
 				<span class="name-category">Медицинская справка</span>
 			</a>			
 			<span class="card-certificate__card-action">Получить справку 086 у для ВУЗа</span>   
-			<div class="card__button-wrapper">
-				<a class="card__button-buy card__button-buy--detail" href="">Заказать</a>
-			</div>
+			<button class="card__button button">Заказать</button>
 			<div class="card__price card__price--detail">
 				<span class="price-value">1200 руб</span>
 			</div> 
 		</div>
+        <p class="product-text">
+		Каждому абитуриенту при поступлении в выбранное учебное заведение необходимо предоставить определенный пакет документов. В обязательном порядке в данный перечень входит справка формы 086/у. Ее оформление в обычной поликлинике может занять много времени и сил. А сдача анализов и вовсе может превратиться в страшное испытание. Часы, потерянные на простаивание в очередях к доктору можно потратить на что-то полезное. Наиболее подходящим выходом в данной ситуации является покупка медицинской справки 086/у. Главное - покупать документ у проверенных представителей.
+		</p>
 		<h2 class="detail__heading">Как оформить медицинскую справку в колледж или вуз?</h2>
 		<p class="product-text">
 		Для того, чтобы получить справку 086/у в Москве, потребуется выполнить ряд условий. Для получения этого документа обратитесь со своим паспортом в поликлинику по месту вашего жительства или регистрации. Прежде всего, нужно обратится к соответствующему терапевту/педиатру, который выдает направление, где будут указаны все врачи и виды анализов. В некоторых государственных медучреждениях к каждому докторунужно приходить исключительно по предварительной записи.
@@ -55,8 +63,8 @@ get_header();
 
 		<section class="popular-product">
 			<h2 class="section-heading">Попоулярные товары</h2>
-			<ul class="price__list">
-            <li class="list__item">
+			<ul class="list">
+            <li class="list__item list__item--popular">
                 <div class="card">
                     <picture class="card__picture">
                         <img class="card__image" src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/image163.jpg" alt="" >
@@ -65,12 +73,10 @@ get_header();
                     <div class="card__price">
                         <span class="price-value">1200 руб</span>
                     </div> 
-                    <div class="card__button-wrapper">
-                        <a class="card__button-buy" href="">Заказать</a>
-                    </div>
+                    <button class="card__button button">Заказать</button>
                 </div>
             </li>
-            <li class="list__item">
+            <li class="list__item list__item--popular">
                 <div class="card">
                     <picture class="card__picture">
                         <img class="card__image" src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/image163.jpg" alt="" >
@@ -79,12 +85,10 @@ get_header();
                     <div class="card__price">
                         <span class="price-value">1000 руб</span>
                     </div> 
-                    <div class="card__button-wrapper">
-                        <a class="card__button-buy" href="">Заказать</a>
-                    </div>
+                    <button class="card__button button">Заказать</button>
                 </div>
             </li>
-            <li class="list__item">
+            <li class="list__item list__item--popular">
                 <div class="card">
                     <picture class="card__picture">
                         <img class="card__image" src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/image163.jpg" alt="" >
@@ -93,12 +97,10 @@ get_header();
                     <div class="card__price">
                         <span class="price-value">600 руб</span>
                     </div> 
-                    <div class="card__button-wrapper">
-                        <a class="card__button-buy" href="">Заказать</a>
-                    </div>
+                    <button class="card__button button">Заказать</button>
                 </div>
             </li>
-            <li class="list__item">
+            <li class="list__item list__item--popular">
                 <div class="card">
                     <picture class="card__picture">
                         <img class="card__image" src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/image163.jpg" alt="" >
@@ -107,9 +109,7 @@ get_header();
                     <div class="card__price">
                         <span class="price-value">1200 руб</span>
                     </div> 
-                    <div class="card__button-wrapper">
-                        <a class="card__button-buy" href="">Заказать</a>
-                    </div>
+                    <button class="card__button button">Заказать</button>
                 </div>
             </li>
 		</ul>

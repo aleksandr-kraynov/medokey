@@ -4,7 +4,17 @@ Template Name: Оформить заказ
 */
 get_header()
 ?>
-<div class="container">
+
+<div class="header-page">
+    <div class="container container--heading">
+        <div class="breadcrumb"></div>
+        <div class="page-heading">
+            <h1 class="heading">Доставка</h1>
+        </div>
+    </div>
+</div>
+
+<div class="container container--page">
         <div class="ordering">
             <div class="ordering__info info">
                 <div class="info__item">
