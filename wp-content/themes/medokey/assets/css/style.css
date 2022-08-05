@@ -622,7 +622,7 @@ body {
 
 }
 
-/* ---------- CF7 ---------- */
+/* ---------- COMMENT FORM ---------- */
 
 .comments__form {
     margin: 0 auto;
@@ -664,7 +664,7 @@ body {
     border-radius: 15px;
 }
 
-/* ---------- CF7 end ---------- */
+/* ---------- COMMENT FORM end ---------- */
 
 
 #mega-menu-wrap-max_mega_menu_2 {
@@ -1295,5 +1295,49 @@ body {
     color: #636363;
 }
 
+/* ---------- ORDERING FORM ---------- */
+.ordering .inner {
+    max-width: 1200px;
+    margin: 60px auto 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ordering__form {
+    margin-top: 40px;
+    max-width: 460px;
+    width: 100%;
+    padding: 0;
+}
+
+.form__input--ordering,
+.form__textarea--ordering {
+    background: #F1F1F1 !important;
+    opacity: 1 !important;
+    border: none !important;
+}
+
+.form__textarea--ordering {
+    height: 260px;
+    resize: none;
+    margin: 0;
+}
+
+.form__input--ordering {
+    max-width: 640px;
+    margin: 0;
+}
+
+.ordering__button {
+    width: 100%;
+    margin-top: 30px;
+    border-radius: 22px;
+}
+
+.block-img {
+    max-width: 572px;
+}
+
+/* ---------- ORDERING FORM end ---------- */
 
 /* ---------- ORDERING end ---------- */

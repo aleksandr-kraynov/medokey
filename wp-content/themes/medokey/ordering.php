@@ -46,6 +46,23 @@ get_header()
                     </div>
                 </div>
             </div>
+            <div class="inner">
+                <form class="ordering__form form">
+                    <label class="form__title form__title--ordering">ФИО*
+                        <input class="form__input form__input--ordering" type="text" name="username" placeholder="Введите ФИО" required>
+                    </label>
+                    <label class="form__title form__title--ordering">Номер телефона*
+                        <input class="form__input form__input--ordering" type="tel" name="tel" placeholder="Введите номер телефона" required>
+                    </label>
+                    <label class="form__title form__title--ordering">Справка*
+                        <input class="form__input form__input--ordering" type="text" name="text" placeholder="Какая нужна справка" required>
+                    </label> 
+                    <button class="ordering__button button">Заказать справку</button>
+                </form>
+                <div class="block-img">
+                <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/woomen-laptop.png'">
+                </div>
+            </div>
         </div>
     </div>
 
