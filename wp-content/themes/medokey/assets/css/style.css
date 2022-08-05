@@ -692,21 +692,23 @@ body {
     flex: 1 1 348px;
     text-align: center;
     padding: 0 15px;
-
+    width: 100%;
     margin: 0px 0px 8px 0px;
 }
 .choice-content {
     background: #FFFFFF;
     border-radius: 6px;
     height: 400px;
-    padding: 66px;
+    padding: 55px;
     
 }
 .choice-payment__picture {
     display: flex;
     height: 143px;
     justify-content: center;
-   
+}
+.choice-payment__image {
+    max-width: none;
 }
 
 .choice-payment__description {
