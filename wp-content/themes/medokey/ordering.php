@@ -47,7 +47,8 @@ get_header()
                 </div>
             </div>
             <div class="inner">
-                <form class="ordering__form form">
+            <?php echo do_shortcode( '[contact-form-7 id="70" title="Заказать справку"]' ); ?>
+                <!-- <form class="ordering__form form">
                     <label class="form__title form__title--ordering">ФИО*
                         <input class="form__input form__input--ordering" type="text" name="username" placeholder="Введите ФИО" required>
                     </label>
@@ -58,7 +59,7 @@ get_header()
                         <input class="form__input form__input--ordering" type="text" name="text" placeholder="Какая нужна справка" required>
                     </label> 
                     <button class="ordering__button button">Заказать справку</button>
-                </form>
+                </form> -->
                 <div class="block-img">
                 <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/woomen-laptop.png'">
                 </div>

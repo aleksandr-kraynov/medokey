@@ -540,13 +540,13 @@ body {
 /* ---------- FOOTER end ----------  */
 
 /* ---------- COMMENTS ---------- */
-.comments {
+.feedbacks {
     display: grid;
     grid-auto-columns: 1fr;
     gap: 20px;
 }
 
-.comment {
+.feedback {
     margin: 0 auto;
     /* max-width: 1380px; */
     width: 100%;
@@ -557,14 +557,14 @@ body {
     border-radius: 6px;
 }
 
-.comment .inner {
+.feedback .inner {
     max-width: 1136px;
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
 
-.comment .wrap {
+.feedback .wrap {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -572,17 +572,17 @@ body {
     width: 263px;
 }
 
-.comment__avatar {
+.feedback__avatar {
     width: 91px;
     height: 91px;
     border-radius: 50%;
 }
 
-.comment__avatar img {
+.feedback__avatar img {
     width: 100%;
 }
 
-.comment__author {
+.feedback__author {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -596,12 +596,12 @@ body {
     line-height: 160%;
 }
 
-.comment__text {
+.feedback__text {
     max-width: 754px;
     width: 100%;
 }
 
-.comment__text p {
+.feedback__text p {
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -609,11 +609,11 @@ body {
     color: #939393;
 }
 
-.comment__data {
+.feedback__data {
     align-self: flex-end;
 }
 
-.comment__data span {
+.feedback__data span {
     font-style: normal;
     font-weight: 500;
     font-size: 13px;
@@ -624,13 +624,13 @@ body {
 
 /* ---------- COMMENT FORM ---------- */
 
-.comments__form {
+.feedbacks__form {
     margin: 0 auto;
     max-width: 1150px;
     width: 100%;
 }
 
-.comments__form-title {
+.feedbacks__form-title {
     text-align: center;
     font-style: normal;
     font-weight: 400;
@@ -640,25 +640,25 @@ body {
 
 }
 
-.form__input--comments,
-.form__textarea--comments {
+.form__input--feedbacks,
+.form__textarea--feedbacks {
     background: #F1F1F1 !important;
     opacity: 1 !important;
     border: 0.5px solid #0B9CEF !important;
 }
 
-.form__textarea--comments {
+.form__textarea--feedbacks {
     height: 260px;
     resize: none;
     margin: 0 !important;
 }
 
-.form__input--comments {
+.form__input--feedbacks {
     padding: 12px 35px !important;
     max-width: 640px;
 }
 
-.comments__button {
+.feedbacks__button {
     width: 100%;
     margin-top: 30px;
     border-radius: 15px;
@@ -1308,6 +1308,12 @@ body {
     max-width: 460px;
     width: 100%;
     padding: 0;
+    background: inherit;
+}
+
+.ordering .wpcf7 {
+    max-width: 460px;
+    width: 100%;
 }
 
 .form__input--ordering,
@@ -1328,14 +1334,17 @@ body {
     margin: 0;
 }
 
+.ordering .form__title {
+    margin: 0;
+}
+
 .ordering__button {
     width: 100%;
-    margin-top: 30px;
     border-radius: 22px;
 }
 
 .block-img {
-    max-width: 572px;
+    min-width: 572px;
 }
 
 /* ---------- ORDERING FORM end ---------- */
