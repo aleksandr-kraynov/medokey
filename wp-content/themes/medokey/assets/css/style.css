@@ -544,6 +544,7 @@ body {
     display: grid;
     grid-auto-columns: 1fr;
     gap: 20px;
+    margin-bottom: 40px;
 }
 
 .feedback {
@@ -569,7 +570,7 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 0 5px;
-    width: 263px;
+    width: 235px;
 }
 
 .feedback__avatar {
@@ -613,7 +614,7 @@ body {
     align-self: flex-end;
 }
 
-.feedback__data span {
+.feedback__data span a {
     font-style: normal;
     font-weight: 500;
     font-size: 13px;
@@ -622,15 +623,21 @@ body {
 
 }
 
+.comment-list {
+    list-style: none;
+    margin: 0 0 40px 0;
+    padding: 0;
+}
+
 /* ---------- COMMENT FORM ---------- */
 
-.feedbacks__form {
+.comments__form {
     margin: 0 auto;
     max-width: 1150px;
     width: 100%;
 }
 
-.feedbacks__form-title {
+.comment-reply-title {
     text-align: center;
     font-style: normal;
     font-weight: 400;
@@ -640,25 +647,25 @@ body {
 
 }
 
-.form__input--feedbacks,
-.form__textarea--feedbacks {
+.form__input--comments,
+.form__textarea--comments {
     background: #F1F1F1 !important;
     opacity: 1 !important;
     border: 0.5px solid #0B9CEF !important;
 }
 
-.form__textarea--feedbacks {
+.form__textarea--comments {
     height: 260px;
     resize: none;
     margin: 0 !important;
 }
 
-.form__input--feedbacks {
+.form__input--comments {
     padding: 12px 35px !important;
     max-width: 640px;
 }
 
-.feedbacks__button {
+.comments__button {
     width: 100%;
     margin-top: 30px;
     border-radius: 15px;

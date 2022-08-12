@@ -21,18 +21,21 @@ if ( post_password_required() )
  
     <?php if ( have_comments() ) : ?>
         <h2 class="comments-title">
-            <?php
+            <!-- <?php
                 printf( _nx( 'One thought on "%2$s"', '%1$s thoughts on "%2$s"', get_comments_number(), 'comments title', 'twentythirteen' ),
                     number_format_i18n( get_comments_number() ), '<span>' . get_the_title() . '</span>' );
-            ?>
+            ?> -->
         </h2>
  
-        <ol class="comment-list">
+        <ol class="comment-list feedbacks">
             <?php
                 wp_list_comments( array(
-                    'style'       => 'ol',
-                    'short_ping'  => true,
-                    'avatar_size' => 74,
+                    'style'         => 'ol',
+                    'short_ping'    => true,
+                    'avatar_size'   => 74,
+                    'callback'      => 'mytheme_comment',
+                    'per_page'      => '',
+                    'page'      => '' 
                 ) );
             ?>
         </ol><!-- .comment-list -->
@@ -55,26 +58,19 @@ if ( post_password_required() )
     <?php endif; // have_comments() ?>
  <div class="comments__form form">
     <?php 
-    $comments_args = array(
+    $args = array(
         'fields' => array(
-            'author' => '
-                <input  id="author" class="form__input form__input--comments" name="author" type="text" value="" placeholder="Имя *"' . esc_attr( $commenter['comment_author'] ) . '"' . $aria_req . $html_req . ' />',
-            'email'  => '
-                <input id="email" class="form__input form__input--comments" name="email" ' . ( $html5 ? 'type="email"' : 'type="text"' ) . ' value="" placeholder="Email *"' . esc_attr(  $commenter['comment_author_email'] ) . '" size="30" aria-describedby="email-notes"' . $aria_req . $html_req  . ' />'
+            'author' => '<input  id="author" class="form__input form__input--comments" name="author" type="text" value="" placeholder="Имя *"' . esc_attr( $commenter['comment_author'] ) . '"' . $aria_req . $html_req . ' />',
+            'email'  => '<input id="email" class="form__input form__input--comments" name="email" ' . ( $html5 ? 'type="email"' : 'type="text"' ) . ' value="" placeholder="Email *"' . esc_attr(  $commenter['comment_author_email'] ) . '"aria-describedby="email-notes"' . $aria_req . $html_req  . ' />'
             ),
+        'title_reply'           => 'Оставить свой отзыв',
+        'class_submit'          => 'comments__button button',
+        'label_submit'          => 'Оставить отзыв',
+        'comment_notes_before'  => '',
+        'comment_field'         => '<label for="comment" class="form__title form__title--comments">' . esc_html_x( 'Ваш e-mail не будет опубликован. Обязательные поля помечены *', 'wptuts' ) . '</label> <textarea id="comment" class="form__textarea form__textarea--comments" name="comment"  aria-required="true"></textarea>',
+
             
     );
-    comment_form($comments_args); 
+    comment_form($args); 
     ?>
- </div>
-    
- <form class="comments__form form">
-<h2 class="comments__form-title">Пажалуйста, оставьте отзыв</h2> 
-    <label class="form__title form__title--comments">Ваш e-mail не будет опубликован. Обязательные поля помечены *
-        <textarea class="form__textarea form__textarea--comments" type="text" name="your-message" placeholder="Напишите отзыв здесь" ></textarea>
-    </label>
-    <input class="form__input form__input--comments" type="text" name="username" placeholder="Имя *" required>
-    <input class="form__input form__input--comments" type="text" name="your-email" placeholder="Email *" required>
-  <button class="comments__button button">Оставить отзыв</button>
-</form>
-</div><!-- #comments -->
+    </div>

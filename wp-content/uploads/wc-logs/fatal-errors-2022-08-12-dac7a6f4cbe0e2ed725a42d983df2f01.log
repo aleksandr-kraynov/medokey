@@ -1,0 +1,66 @@
+2022-08-12T04:39:11+00:00 CRITICAL Uncaught Error: Call to undefined function esc_x() in C:\OpenServer\domains\medokey\wp-content\themes\medokey\comments.php:67
+Stack trace:
+#0 C:\OpenServer\domains\medokey\wp-includes\comment-template.php(1556): require()
+#1 C:\OpenServer\domains\medokey\wp-content\themes\medokey\feedback.php(128): comments_template()
+#2 C:\OpenServer\domains\medokey\wp-includes\template-loader.php(106): include('C:\\OpenServer\\d...')
+#3 C:\OpenServer\domains\medokey\wp-blog-header.php(19): require_once('C:\\OpenServer\\d...')
+#4 C:\OpenServer\domains\medokey\index.php(17): require('C:\\OpenServer\\d...')
+#5 {main}
+  thrown в C:\OpenServer\domains\medokey\wp-content\themes\medokey\comments.php на строке 67
+
+2022-08-12T04:39:43+00:00 CRITICAL Uncaught Error: Call to undefined function esc_x() in C:\OpenServer\domains\medokey\wp-content\themes\medokey\comments.php:67
+Stack trace:
+#0 C:\OpenServer\domains\medokey\wp-includes\comment-template.php(1556): require()
+#1 C:\OpenServer\domains\medokey\wp-content\themes\medokey\feedback.php(128): comments_template()
+#2 C:\OpenServer\domains\medokey\wp-includes\template-loader.php(106): include('C:\\OpenServer\\d...')
+#3 C:\OpenServer\domains\medokey\wp-blog-header.php(19): require_once('C:\\OpenServer\\d...')
+#4 C:\OpenServer\domains\medokey\index.php(17): require('C:\\OpenServer\\d...')
+#5 {main}
+  thrown в C:\OpenServer\domains\medokey\wp-content\themes\medokey\comments.php на строке 67
+
+2022-08-12T04:40:31+00:00 CRITICAL Uncaught Error: Call to undefined function esc_x() in C:\OpenServer\domains\medokey\wp-content\themes\medokey\comments.php:67
+Stack trace:
+#0 C:\OpenServer\domains\medokey\wp-includes\comment-template.php(1556): require()
+#1 C:\OpenServer\domains\medokey\wp-content\themes\medokey\feedback.php(128): comments_template()
+#2 C:\OpenServer\domains\medokey\wp-includes\template-loader.php(106): include('C:\\OpenServer\\d...')
+#3 C:\OpenServer\domains\medokey\wp-blog-header.php(19): require_once('C:\\OpenServer\\d...')
+#4 C:\OpenServer\domains\medokey\index.php(17): require('C:\\OpenServer\\d...')
+#5 {main}
+  thrown в C:\OpenServer\domains\medokey\wp-content\themes\medokey\comments.php на строке 67
+
+2022-08-12T04:40:40+00:00 CRITICAL Uncaught Error: Call to undefined function esc_x() in C:\OpenServer\domains\medokey\wp-content\themes\medokey\comments.php:67
+Stack trace:
+#0 C:\OpenServer\domains\medokey\wp-includes\comment-template.php(1556): require()
+#1 C:\OpenServer\domains\medokey\wp-content\themes\medokey\feedback.php(128): comments_template()
+#2 C:\OpenServer\domains\medokey\wp-includes\template-loader.php(106): include('C:\\OpenServer\\d...')
+#3 C:\OpenServer\domains\medokey\wp-blog-header.php(19): require_once('C:\\OpenServer\\d...')
+#4 C:\OpenServer\domains\medokey\index.php(17): require('C:\\OpenServer\\d...')
+#5 {main}
+  thrown в C:\OpenServer\domains\medokey\wp-content\themes\medokey\comments.php на строке 67
+
+2022-08-12T07:15:14+00:00 CRITICAL syntax error, unexpected '>' in C:\OpenServer\domains\medokey\wp-content\themes\medokey\functions.php on line 113
+
+2022-08-12T07:15:14+00:00 CRITICAL syntax error, unexpected '>' in C:\OpenServer\domains\medokey\wp-content\themes\medokey\functions.php on line 113
+
+2022-08-12T07:21:11+00:00 CRITICAL syntax error, unexpected '>' in C:\OpenServer\domains\medokey\wp-content\themes\medokey\functions.php on line 85
+
+2022-08-12T07:21:11+00:00 CRITICAL syntax error, unexpected '>' in C:\OpenServer\domains\medokey\wp-content\themes\medokey\functions.php on line 85
+
+2022-08-12T07:27:09+00:00 CRITICAL syntax error, unexpected end of file in C:\OpenServer\domains\medokey\wp-content\themes\medokey\functions.php on line 115
+
+2022-08-12T07:27:09+00:00 CRITICAL syntax error, unexpected end of file in C:\OpenServer\domains\medokey\wp-content\themes\medokey\functions.php on line 115
+
+2022-08-12T10:07:41+00:00 CRITICAL syntax error, unexpected '<', expecting end of file in C:\OpenServer\domains\medokey\wp-content\themes\medokey\functions.php on line 123
+
+2022-08-12T10:34:42+00:00 CRITICAL syntax error, unexpected '<', expecting end of file in C:\OpenServer\domains\medokey\wp-content\themes\medokey\functions.php on line 138
+
+2022-08-12T10:34:42+00:00 CRITICAL syntax error, unexpected '<', expecting end of file in C:\OpenServer\domains\medokey\wp-content\themes\medokey\functions.php on line 138
+
+2022-08-12T11:00:04+00:00 CRITICAL Cannot redeclare comment_form_title() (previously declared in C:\OpenServer\domains\medokey\wp-includes\comment-template.php:1999) in C:\OpenServer\domains\medokey\wp-content\themes\medokey\functions.php on line 124
+
+2022-08-12T11:00:05+00:00 CRITICAL Cannot redeclare comment_form_title() (previously declared in C:\OpenServer\domains\medokey\wp-includes\comment-template.php:1999) in C:\OpenServer\domains\medokey\wp-content\themes\medokey\functions.php on line 124
+
+2022-08-12T12:07:08+00:00 CRITICAL syntax error, unexpected ';', expecting ')' в C:\OpenServer\domains\medokey\wp-content\themes\medokey\comments.php на строке 85
+
+2022-08-12T12:17:04+00:00 CRITICAL syntax error, unexpected ';', expecting ')' в C:\OpenServer\domains\medokey\wp-content\themes\medokey\comments.php на строке 80
+
